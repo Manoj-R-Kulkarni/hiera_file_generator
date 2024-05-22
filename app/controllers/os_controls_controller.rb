@@ -11,7 +11,6 @@ class OsControlsController < ApplicationController
 
     
     @mapping_data = read_mapping_data.first[1].first[1].first[1]
-
   end
 
   def generate
@@ -54,7 +53,7 @@ class OsControlsController < ApplicationController
     elsif selected_option.eql?('ignore')
       pick_controls_only - selected_controls
     else
-      raise "Invalid Option: #{selected_option}"
+      []
     end
   end
 

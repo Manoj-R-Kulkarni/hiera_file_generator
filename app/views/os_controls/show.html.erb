@@ -18,22 +18,31 @@
   
   <h2>Select Option:</h2>
   <div>
-    <%= radio_button_tag 'option', 'ignore', true, id: 'option_ignore' %>
-    <%= label_tag 'option_ignore', 'Ignore' %>
+    <%= radio_button_tag 'option', 'only', true, id: 'option_only' %>
+    <%= label_tag 'option_only', 'Only' %>
   </div>
   <div>
-    <%= radio_button_tag 'option', 'only', false, id: 'option_only' %>
-    <%= label_tag 'option_only', 'Only' %>
+    <%= radio_button_tag 'option', 'ignore', false, id: 'option_ignore' %>
+    <%= label_tag 'option_ignore', 'Ignore' %>
   </div>
   <div>
     <%= radio_button_tag 'option', 'all', false, id: 'option_all' %>
     <%= label_tag 'option_all', 'All' %>
+  </div>
+  <div>
+    <%= radio_button_tag 'option', 'none', false, id: 'option_none' %>
+    <%= label_tag 'option_none', 'Deselect all' %>
   </div>
   
   <script>
    let option_all = document.getElementById('option_all');
    option_all.addEventListener('change', function(e) {
       document.querySelectorAll('.control-checkbox').forEach(checkbox => checkbox.checked = true)
+   });
+
+   let option_none = document.getElementById('option_none');
+   option_none.addEventListener('change', function(e) {
+      document.querySelectorAll('.control-checkbox').forEach(checkbox => checkbox.checked = false)
    });
   </script>
 
