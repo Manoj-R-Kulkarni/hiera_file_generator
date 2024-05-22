@@ -1,0 +1,67 @@
+<%# <h1>OsControls#show</h1>
+<p>Find me in app/views/os_controls/show.html.erb</p> %>
+<h1>Controls for <%= @os %></h1>
+<%= form_with url: generate_controls_path, method: :post, local: true, data: { turbo: false }, id: 'controls-form' do %>
+  <input type="hidden" name="os" value="<%= @os %>">
+  <input type="hidden" name="format" value="html">
+  
+  <div id="controls-container">
+    <% @controls.each do |control| %>
+      <div>
+        <%= check_box_tag 'controls[]', control, false, class: 'control-checkbox' %>
+        <%= label_tag "controls_#{control}", control %>
+      </div>
+    <% end %>
+  </div>
+  
+  <h2>Select Option:</h2>
+  <div>
+    <%= radio_button_tag 'option', 'ignore', true, id: 'option_ignore' %>
+    <%= label_tag 'option_ignore', 'Ignore' %>
+  </div>
+  <div>
+    <%= radio_button_tag 'option', 'only', false, id: 'option_only' %>
+    <%= label_tag 'option_only', 'Only' %>
+  </div>
+  <div>
+    <%= radio_button_tag 'option', 'all', false, id: 'option_all' %>
+    <%= label_tag 'option_all', 'All' %>
+  </div>
+  
+  <%= submit_tag 'Generate YAML File' %>
+<% end %>
+
+<%# 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const allRadio = document.getElementById('option_all');
+    const ignoreRadio = document.getElementById('option_ignore');
+    const onlyRadio = document.getElementById('option_only');
+    const checkboxes = document.querySelectorAll('.control-checkbox');
+    
+    allRadio.addEventListener('change', function() {
+      if (this.checked) {
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = true;
+        });
+      }
+    });
+
+    ignoreRadio.addEventListener('change', function() {
+      if (this.checked) {
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = false;
+        });
+      }
+    });
+
+    onlyRadio.addEventListener('change', function() {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+      });
+    });
+  });
+</script> %>
+
+
+

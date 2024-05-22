@@ -1,0 +1,8 @@
+<%# <h1>OsControls#generate</h1>
+<p>Find me in app/views/os_controls/generate.html.erb</p> %>
+
+<h1>Generated YAML for <%= @os %></h1>
+<pre>
+<%= @yaml_content %>
+</pre>
+<%= link_to 'Download YAML File', generate_controls_path(os: @os, controls: @selected_controls, format: :yaml) %>
