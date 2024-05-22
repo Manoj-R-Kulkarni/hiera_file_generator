@@ -38,7 +38,7 @@ class OsControlsController < ApplicationController
   end
 
   def pick_controls_only
-    controls_hash.map { |klass, details| details[:controls].keys }.flatten.map(&:to_s)
+    controls_hash.map { |_klass, details| details[:controls].keys }.flatten.map(&:to_s)
   end
 
   def get_final_controls(os ,selected_controls, selected_option)
@@ -57,7 +57,13 @@ class OsControlsController < ApplicationController
     controls_hash.each do |class_name, class_data|
       class_data[:controls].each do |control_name, control_data|
         if final_controls.include?(control_name.to_s)
-          filtered_data[control_name] = control_data
+          next if control_data == 'no_params'
+
+          control_data_hash = {}
+          control_data.each do |k, v|
+            control_data_hash[k.to_s] = v.to_s
+          end
+          filtered_data[control_name.to_s] = control_data_hash
         end
       end
     end
