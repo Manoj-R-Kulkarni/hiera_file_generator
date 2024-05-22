@@ -1,5 +1,5 @@
 require 'yaml'
-require 'json'
+require 'pry'
 # generate final output heira file
 class GenerateHeiraData
   # lint:ignore UnusedMethodArgument
@@ -33,9 +33,11 @@ class GenerateHeiraData
 
     yaml_data['sce_linux::config']['control_configs'] = controls_with_params
 
-    File.open(final_filename, 'w') do |f|
-      f.write(yaml_data.to_yaml)
-    end
+    # File.open(final_filename, 'w') do |f|
+    #   f.write(yaml_data.to_yaml)
+    # end
+    binding.pry
+    yaml_data.to_yaml
   end
   # lint:end
 end
