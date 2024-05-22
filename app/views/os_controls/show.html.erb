@@ -3,17 +3,18 @@
 <h1>Controls for <%= @os %></h1>
 <%= form_with url: generate_controls_path, method: :post, local: true, data: { turbo: false }, id: 'controls-form' do %>
   <input type="hidden" name="os" value="<%= @os %>">
-  <input type="hidden" name="format" value="html">
   
-  <div id="controls-container">
-    <% @controls.each do |control| %>
-      <div>
-        <% cnt_arr = @mapping_data[control.to_s] %>
-        <%= check_box_tag 'controls[]', control, false, class: 'control-checkbox' %>
-        <%= label_tag "controls_#{control}", "#{cnt_arr[0]}  #{cnt_arr [1]}" %>
-      </div>
-    <% end %>
-  </div>
+  <table>
+    <tbody id="controls-container">
+      <% @controls.each do |control| %>
+        <tr>
+          <td width = '5%'><%= check_box_tag 'controls[]', control, false, class: 'control-checkbox' %></td>
+          <td width = '15%'><%= label_tag "controls_#{control}", "#{@mapping_data[control.to_s][0]}" %></td>
+          <td width = '80%'><%= label_tag "controls_#{control}", "#{@mapping_data[control.to_s][1]}" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
   
   <h2>Select Option:</h2>
   <div>
@@ -29,40 +30,16 @@
     <%= label_tag 'option_all', 'All' %>
   </div>
   
-  <%= submit_tag 'Generate YAML File' %>
+  <script>
+   let option_all = document.getElementById('option_all');
+   option_all.addEventListener('change', function(e) {
+      document.querySelectorAll('.control-checkbox').forEach(checkbox => checkbox.checked = true)
+   });
+  </script>
+
+  <%= submit_tag 'Generate Hiera File' %>  
 <% end %>
 
-<%# 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const allRadio = document.getElementById('option_all');
-    const ignoreRadio = document.getElementById('option_ignore');
-    const onlyRadio = document.getElementById('option_only');
-    const checkboxes = document.querySelectorAll('.control-checkbox');
-    
-    allRadio.addEventListener('change', function() {
-      if (this.checked) {
-        checkboxes.forEach(checkbox => {
-          checkbox.checked = true;
-        });
-      }
-    });
-
-    ignoreRadio.addEventListener('change', function() {
-      if (this.checked) {
-        checkboxes.forEach(checkbox => {
-          checkbox.checked = false;
-        });
-      }
-    });
-
-    onlyRadio.addEventListener('change', function() {
-      checkboxes.forEach(checkbox => {
-        checkbox.checked = false;
-      });
-    });
-  });
-</script> %>
 
 
 
