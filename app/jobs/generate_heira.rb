@@ -3,7 +3,7 @@ require 'json'
 # generate final output heira file
 class GenerateHeiraData
   # lint:ignore UnusedMethodArgument
-  def content(ruleset, profile, level, selected_option, selected_controls, controls_with_params, path, filename, os)
+  def content(ruleset, profile, level, selected_option, selected_controls = [], controls_with_params = {}, path, filename, os)
     final_filename = !filename.nil? ? "#{path}/#{filename}.yml" : "#{path}/#{os}.yml"
     if ruleset == 'cis'
       yaml_data = {

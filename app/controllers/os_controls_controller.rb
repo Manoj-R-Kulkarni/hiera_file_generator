@@ -15,10 +15,8 @@ class OsControlsController < ApplicationController
     final_controls_to_show = get_final_controls(@os, @selected_controls, params['option'])
 
 
-    @yaml_content = YAML.dump({
-      control_configs: load_required_hash(final_controls_to_show),
-    })
-    
+    @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', params['option'],selected_controls, final_controls_to_show, '/tmp', '', @os)
+
     respond_to do |format|
       format.html { render :generate }
       format.yaml { send_data @yaml_content, filename: "#{@os}_controls.yml" }
