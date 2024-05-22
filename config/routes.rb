@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'os_controls/:os', to: 'os_controls#show', as: 'os_controls'
   post 'os_controls/generate', to: 'os_controls#generate', as: 'generate_controls'
-  get 'os_controls/generate', to: 'os_controls#generate', as: 'download_controls'
   # get 'os_controls/show'
   # get 'os_controls/generate'
   # get 'home/index'

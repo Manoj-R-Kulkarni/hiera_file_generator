@@ -16,13 +16,14 @@ class OsControlsController < ApplicationController
   def generate
     @os = params[:os]
     @selected_controls = params[:controls] || []
-    final_controls_to_show = get_final_controls(@os, @selected_controls, params['option'])
+    @option = params[:option]
+    final_controls_to_show = get_final_controls(@os, @selected_controls, @option)
 
-    @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', params['option'], @selected_controls, load_required_hash(final_controls_to_show), '/Users/rahul.sinha/Downloads', '', @os)
+    @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', @option, @selected_controls, load_required_hash(final_controls_to_show), '/Users/rahul.sinha/Downloads', '', @os)
 
     respond_to do |format|
       format.html { render :generate }
-      format.yaml { send_data @yaml_content, filename: "#{@os}_controls.yml" }
+      format.yaml { send_data @yaml_content, filename: "#{@os}_controls.yml", type: 'application/x-yaml', disposition: 'attachment' }
     end
   end
 
