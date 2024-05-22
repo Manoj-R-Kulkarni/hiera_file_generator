@@ -36,7 +36,6 @@ class GenerateHeiraData
     # File.open(final_filename, 'w') do |f|
     #   f.write(yaml_data.to_yaml)
     # end
-    binding.pry
     yaml_data.to_yaml
   end
   # lint:end

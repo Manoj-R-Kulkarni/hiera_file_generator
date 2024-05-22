@@ -17,7 +17,7 @@ class OsControlsController < ApplicationController
 
     final_controls_to_show = get_final_controls(@os, @selected_controls, params['option'])
 
-    @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', params['option'], @selected_controls, final_controls_to_show, '/Users/rahul.sinha/Downloads', '', @os)
+    @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', params['option'], @selected_controls, load_required_hash(final_controls_to_show), '/Users/rahul.sinha/Downloads', '', @os)
 
     respond_to do |format|
       format.html { render :generate }
