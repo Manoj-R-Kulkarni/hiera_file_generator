@@ -1,39 +1,127 @@
-<%# <h1>OsControls#show</h1>
-<p>Find me in app/views/os_controls/show.html.erb</p> %>
-<h1>Controls for <%= @os %></h1>
-<%= form_with url: generate_controls_path, method: :post, local: true, data: { turbo: false }, id: 'controls-form' do %>
-  <input type="hidden" name="os" value="<%= @os %>">
-  
-  <table>
-    <tbody id="controls-container">
-      <% @controls.each do |control| %>
-        <tr>
-          <td width = '5%'><%= check_box_tag 'controls[]', control, false, class: 'control-checkbox' %></td>
-          <td width = '15%'><%= label_tag "controls_#{control}", "#{@mapping_data[control.to_s][0]}" %></td>
-          <td width = '80%'><%= label_tag "controls_#{control}", "#{@mapping_data[control.to_s][1]}" %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-  
-  <h2>Select Option:</h2>
-  <div>
-    <%= radio_button_tag 'option', 'only', true, id: 'option_only' %>
-    <%= label_tag 'option_only', 'Only' %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Controls for <%= @os %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* Light gray background */
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff; /* White background */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-bottom: 5px; /* Increased spacing */
+    }
+
+    .checkbox-group div {
+      margin-bottom: 5px; /* Adjusted margin for better alignment */
+    }
+
+    #controls-container {
+      max-height: 400px; /* Max height for scrollable container */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .control-checkbox {
+      margin-right: 10px;
+    }
+
+    .btn-center {
+      text-align: center;
+    }
+
+    .submit-btn {
+      display: block;
+      margin: 0 auto; /* Center the button horizontally */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Controls Available for <%= @os %> OS</h1>
+
+    <%= form_with url: generate_controls_path, method: :post, local: true, data: { turbo: false }, id: 'controls-form' do %>
+      <input type="hidden" name="os" value="<%= @os %>">
+      <input type="hidden" name="format" value="html">
+
+      <div id="controls-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Control Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @controls.each do |control| %>
+              <tr>
+                <td width = '5%'><%= check_box_tag 'controls[]', control, false, class: 'control-checkbox' %></td>
+                <td width = '15%'><%= label_tag "controls_#{control}", "#{@mapping_data[control.to_s][0]}" %></td>
+                <td width = '80%'><%= label_tag "controls_#{control}", "#{@mapping_data[control.to_s][1]}" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      
+      <div margin = '10px'>
+        <h4>Select Option:</h4>
+        <div class="radio-group">
+          <%= radio_button_tag 'option', 'only', true, id: 'option_only' %>
+          <%= label_tag 'option_only', 'Add Selected Controls' %>
+        </div>
+        <div class="radio-group">
+          <%= radio_button_tag 'option', 'ignore', false, id: 'option_ignore' %>
+          <%= label_tag 'option_ignore', 'Ignore Selected Controls' %>
+        </div>
+        <div class="radio-group">
+          <%= radio_button_tag 'option', 'all', false, id: 'option_all' %>
+          <%= label_tag 'option_all', 'Add All Controls' %>
+        </div>
+        <div>
+          <%= radio_button_tag 'option', 'none', false, id: 'option_none' %>
+          <%= label_tag 'option_none', 'Deselect all' %>
+        </div>
+
+        <div style="height: 20px;"></div>
+      </div>
+      <%= submit_tag 'Generate YAML File', class: 'btn btn-primary submit-btn' %> <!-- Added 'submit-btn' class for centering -->
+    <% end %>
   </div>
-  <div>
-    <%= radio_button_tag 'option', 'ignore', false, id: 'option_ignore' %>
-    <%= label_tag 'option_ignore', 'Ignore' %>
-  </div>
-  <div>
-    <%= radio_button_tag 'option', 'all', false, id: 'option_all' %>
-    <%= label_tag 'option_all', 'All' %>
-  </div>
-  <div>
-    <%= radio_button_tag 'option', 'none', false, id: 'option_none' %>
-    <%= label_tag 'option_none', 'Deselect all' %>
-  </div>
-  
   <script>
    let option_all = document.getElementById('option_all');
    option_all.addEventListener('change', function(e) {
@@ -46,9 +134,10 @@
    });
   </script>
 
-  <%= submit_tag 'Generate Hiera File' %>  
-<% end %>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
 
-
-
-
+</html>

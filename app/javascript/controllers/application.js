@@ -1,3 +1,7 @@
+import 'bootstrap';
+import '../stylesheets/application';
+
+
 import { Application } from "@hotwired/stimulus"
 
 const application = Application.start()

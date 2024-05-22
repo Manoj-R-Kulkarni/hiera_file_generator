@@ -1,8 +1,15 @@
 <%# <h1>OsControls#generate</h1>
 <p>Find me in app/views/os_controls/generate.html.erb</p> %>
 
-<h1>Generated YAML for <%= @os %></h1>
-<pre>
-<%= @yaml_content %>
-</pre>
-<%= link_to 'Download YAML File', download_controls_path(os: @os, controls: @selected_controls, format: :yaml, method: :get) %>
+<div class="container" style="background-color: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);">
+  <h1>Generated YAML for <%= @os %></h1>
+  <div style="max-height: 400px; overflow-y: auto;">
+    <pre style="margin: 0;">
+      <%= @yaml_content %>
+    </pre>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <%= link_to 'Download YAML File', generate_controls_path(os: @os, controls: @selected_controls, format: :yaml), class: 'btn btn-primary' %>
+</div>
