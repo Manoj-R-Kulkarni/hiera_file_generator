@@ -3,7 +3,7 @@ require 'json'
 # generate final output heira file
 class GenerateHeiraData
   # lint:ignore UnusedMethodArgument
-  def content(ruleset, profile, level, include_only, include_ignore, selected_controls, controls_with_params, path, filename, os)
+  def content(ruleset, profile, level, selected_option, selected_controls, controls_with_params, path, filename, os)
     final_filename = !filename.nil? ? "#{path}/#{filename}.yml" : "#{path}/#{os}.yml"
     if ruleset == 'cis'
       yaml_data = {
@@ -25,9 +25,9 @@ class GenerateHeiraData
       # puts yaml_data
     end
 
-    if include_only
+    if selected_option == 'only'
       yaml_data['sce_linux::config']['only'] = selected_controls
-    elsif include_ignore
+    elsif selected_option == 'ignore'
       yaml_data['sce_linux::config']['ignore'] = selected_controls
     end
 
