@@ -5,4 +5,4 @@
 <pre>
 <%= @yaml_content %>
 </pre>
-<%= link_to 'Download YAML File', generate_controls_path(os: @os, controls: @selected_controls, format: :yaml) %>
+<%= link_to 'Download YAML File', download_controls_path(os: @os, controls: @selected_controls, format: :yaml, method: :get) %>
