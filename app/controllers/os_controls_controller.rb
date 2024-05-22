@@ -16,7 +16,7 @@ class OsControlsController < ApplicationController
 
 
     @yaml_content = YAML.dump({
-      selected_controls: load_required_hash(final_controls_to_show),
+      control_configs: load_required_hash(final_controls_to_show),
     })
     
     respond_to do |format|
@@ -54,11 +54,10 @@ class OsControlsController < ApplicationController
 
   def load_required_hash(final_controls)
     filtered_data = {}
-    filtered_data['control_configs'] = {}
     controls_hash.each do |class_name, class_data|
       class_data[:controls].each do |control_name, control_data|
         if final_controls.include?(control_name.to_s)
-          filtered_data['control_configs'][control_name] = control_data
+          filtered_data[control_name] = control_data
         end
       end
     end
