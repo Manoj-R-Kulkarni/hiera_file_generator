@@ -8,13 +8,15 @@ class OsControlsController < ApplicationController
   def show
     @os = params[:os]
     @controls = get_controls(@os)
+
+    
+    @mapping_data = read_mapping_data.first[1].first[1].first[1]
+
   end
 
   def generate
     @os = params[:os]
     @selected_controls = params[:controls] || []
-    # @yaml_content = { @os => @selected_controls }.to_yaml
-
     final_controls_to_show = get_final_controls(@os, @selected_controls, params['option'])
 
     @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', params['option'], @selected_controls, load_required_hash(final_controls_to_show), '/Users/rahul.sinha/Downloads', '', @os)
@@ -37,18 +39,22 @@ class OsControlsController < ApplicationController
     controls[os] || []
   end
 
+  def read_mapping_data
+    @mapping_data = YAML.load_file(Rails.root.join('config', 'controls.yml'))
+  end
+
   def pick_controls_only
-    controls_hash.map { |_klass, details| details[:controls].keys }.flatten.map(&:to_s)
+    removed_controls = %w[sce_options]
+    controls_hash.map { |_klass, details| details[:controls].keys }.flatten.map(&:to_s).reject { |control| removed_controls.include?(control)  }
   end
 
   def get_final_controls(os ,selected_controls, selected_option)
-    case selected_option
-    when 'all'
+    if %w[all only].include?(selected_option)
       selected_controls
-    when 'only'
-      selected_controls
-    when 'ignore'
+    elsif selected_option.eql?('ignore')
       pick_controls_only - selected_controls
+    else
+      raise "Invalid Option: #{selected_option}"
     end
   end
 

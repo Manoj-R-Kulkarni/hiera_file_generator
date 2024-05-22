@@ -1,0 +1,4079 @@
+---
+sce_linux::mappings::cis::hiera_title:
+  level_1:
+    server:
+      ensure_a_single_firewall_configuration_utility_is_in_use:
+      - 3.4.1.2
+      - Ensure a single firewall configuration utility is in use
+      - c3_4_1_2
+      ensure_access_to_etcissue_is_configured:
+      - 1.7.5
+      - Ensure access to /etc/issue is configured
+      - c1_7_5
+      ensure_access_to_etcissue_net_is_configured:
+      - 1.7.6
+      - Ensure access to /etc/issue.net is configured
+      - c1_7_6
+      ensure_access_to_etcmotd_is_configured:
+      - 1.7.4
+      - Ensure access to /etc/motd is configured
+      - c1_7_4
+      ensure_access_to_the_su_command_is_restricted:
+      - 4.3.7
+      - Ensure access to the su command is restricted
+      - c4_3_7
+      ensure_accounts_in_etcpasswd_use_shadowed_passwords:
+      - 6.2.1
+      - Ensure accounts in /etc/passwd use shadowed passwords
+      - c6_2_1
+      ensure_active_authselect_profile_includes_pam_modules:
+      - 4.4.2.1
+      - Ensure active authselect profile includes pam modules
+      - c4_4_2_1
+      ensure_address_space_layout_randomization_aslr_is_enabled:
+      - 1.4.1
+      - Ensure address space layout randomization (ASLR) is enabled
+      - c1_4_1
+      ensure_aide_is_installed:
+      - 5.3.1
+      - Ensure AIDE is installed
+      - c5_3_1
+      ensure_all_groups_in_etcpasswd_exist_in_etcgroup:
+      - 6.2.3
+      - Ensure all groups in /etc/passwd exist in /etc/group
+      - c6_2_3
+      ensure_all_logfiles_have_appropriate_access_configured:
+      - 5.1.4
+      - Ensure all logfiles have appropriate access configured
+      - c5_1_4
+      ensure_all_users_last_password_change_date_is_in_the_past:
+      - 4.5.1.5
+      - Ensure all users last password change date is in the past
+      - c4_5_1_5
+      ensure_at_is_restricted_to_authorized_users:
+      - 4.1.2.1
+      - Ensure at is restricted to authorized users
+      - c4_1_2_1
+      ensure_autofs_services_are_not_in_use:
+      - 2.2.1
+      - Ensure autofs services are not in use
+      - c2_2_1
+      ensure_avahi_daemon_services_are_not_in_use:
+      - 2.2.2
+      - Ensure avahi daemon services are not in use
+      - c2_2_2
+      ensure_bluetooth_services_are_not_in_use:
+      - 3.1.3
+      - Ensure bluetooth services are not in use
+      - c3_1_3
+      ensure_bogus_icmp_responses_are_ignored:
+      - 3.3.3
+      - Ensure bogus icmp responses are ignored
+      - c3_3_3
+      ensure_bootloader_password_is_set:
+      - 1.3.1
+      - Ensure bootloader password is set
+      - c1_3_1
+      ensure_broadcast_icmp_requests_are_ignored:
+      - 3.3.4
+      - Ensure broadcast icmp requests are ignored
+      - c3_3_4
+      ensure_chrony_is_configured:
+      - 2.1.2
+      - Ensure chrony is configured
+      - c2_1_2
+      ensure_chrony_is_not_run_as_the_root_user:
+      - 2.1.3
+      - Ensure chrony is not run as the root user
+      - c2_1_3
+      ensure_core_dump_backtraces_are_disabled:
+      - 1.4.3
+      - Ensure core dump backtraces are disabled
+      - c1_4_3
+      ensure_core_dump_storage_is_disabled:
+      - 1.4.4
+      - Ensure core dump storage is disabled
+      - c1_4_4
+      ensure_cramfs_kernel_module_is_not_available:
+      - 1.1.1.1
+      - Ensure cramfs kernel module is not available
+      - c1_1_1_1
+      ensure_cron_daemon_is_enabled_and_active:
+      - 4.1.1.1
+      - Ensure cron daemon is enabled and active
+      - c4_1_1_1
+      ensure_crontab_is_restricted_to_authorized_users:
+      - 4.1.1.8
+      - Ensure crontab is restricted to authorized users
+      - c4_1_1_8
+      ensure_cryptographic_mechanisms_are_used_to_protect_the_integrity_of_audit_tools:
+      - 5.3.3
+      - Ensure cryptographic mechanisms are used to protect the integrity of audit
+        tools
+      - c5_3_3
+      ensure_default_group_for_the_root_account_is_gid_0:
+      - 4.5.2.1
+      - Ensure default group for the root account is GID 0
+      - c4_5_2_1
+      ensure_default_user_shell_timeout_is_configured:
+      - 4.5.3.2
+      - Ensure default user shell timeout is configured
+      - c4_5_3_2
+      ensure_default_user_umask_is_configured:
+      - 4.5.3.3
+      - Ensure default user umask is configured
+      - c4_5_3_3
+      ensure_devshm_is_a_separate_partition:
+      - 1.1.2.2.1
+      - Ensure /dev/shm is a separate partition
+      - c1_1_2_2_1
+      ensure_dhcp_server_services_are_not_in_use:
+      - 2.2.3
+      - Ensure dhcp server services are not in use
+      - c2_2_3
+      ensure_dns_server_services_are_not_in_use:
+      - 2.2.4
+      - Ensure dns server services are not in use
+      - c2_2_4
+      ensure_dnsmasq_services_are_not_in_use:
+      - 2.2.5
+      - Ensure dnsmasq services are not in use
+      - c2_2_5
+      ensure_etcshadow_password_fields_are_not_empty:
+      - 6.2.2
+      - Ensure /etc/shadow password fields are not empty
+      - c6_2_2
+      ensure_filesystem_integrity_is_regularly_checked:
+      - 5.3.2
+      - Ensure filesystem integrity is regularly checked
+      - c5_3_2
+      ensure_firewalld_drops_unnecessary_services_and_ports:
+      - 3.4.2.3
+      - Ensure firewalld drops unnecessary services and ports
+      - c3_4_2_3
+      ensure_freevxfs_kernel_module_is_not_available:
+      - 1.1.1.2
+      - Ensure freevxfs kernel module is not available
+      - c1_1_1_2
+      ensure_ftp_client_is_not_installed:
+      - 2.3.1
+      - Ensure ftp client is not installed
+      - c2_3_1
+      ensure_ftp_server_services_are_not_in_use:
+      - 2.2.7
+      - Ensure ftp server services are not in use
+      - c2_2_7
+      ensure_gdm_automatic_mounting_of_removable_media_is_disabled:
+      - 1.8.6
+      - Ensure GDM automatic mounting of removable media is disabled
+      - c1_8_6
+      ensure_gdm_autorun_never_is_enabled:
+      - 1.8.8
+      - Ensure GDM autorun-never is enabled
+      - c1_8_8
+      ensure_gdm_autorun_never_is_not_overridden:
+      - 1.8.9
+      - Ensure GDM autorun-never is not overridden
+      - c1_8_9
+      ensure_gdm_disable_user_list_option_is_enabled:
+      - 1.8.3
+      - Ensure GDM disable-user-list option is enabled
+      - c1_8_3
+      ensure_gdm_disabling_automatic_mounting_of_removable_media_is_not_overridden:
+      - 1.8.7
+      - Ensure GDM disabling automatic mounting of removable media is not overridden
+      - c1_8_7
+      ensure_gdm_login_banner_is_configured:
+      - 1.8.2
+      - Ensure GDM login banner is configured
+      - c1_8_2
+      ensure_gdm_screen_locks_cannot_be_overridden:
+      - 1.8.5
+      - Ensure GDM screen locks cannot be overridden
+      - c1_8_5
+      ensure_gdm_screen_locks_when_the_user_is_idle:
+      - 1.8.4
+      - Ensure GDM screen locks when the user is idle
+      - c1_8_4
+      ensure_gpg_keys_are_configured:
+      - 1.2.1
+      - Ensure GPG keys are configured
+      - c1_2_1
+      ensure_gpgcheck_is_globally_activated:
+      - 1.2.2
+      - Ensure gpgcheck is globally activated
+      - c1_2_2
+      ensure_hfs_kernel_module_is_not_available:
+      - 1.1.1.3
+      - Ensure hfs kernel module is not available
+      - c1_1_1_3
+      ensure_hfsplus_kernel_module_is_not_available:
+      - 1.1.1.4
+      - Ensure hfsplus kernel module is not available
+      - c1_1_1_4
+      ensure_host_based_firewall_loopback_traffic_is_configured:
+      - 3.4.2.2
+      - Ensure host based firewall loopback traffic is configured
+      - c3_4_2_2
+      ensure_icmp_redirects_are_not_accepted:
+      - 3.3.5
+      - Ensure icmp redirects are not accepted
+      - c3_3_5
+      ensure_inactive_password_lock_is_30_days_or_less:
+      - 4.5.1.4
+      - Ensure inactive password lock is 30 days or less
+      - c4_5_1_4
+      ensure_ip_forwarding_is_disabled:
+      - 3.3.1
+      - Ensure ip forwarding is disabled
+      - c3_3_1
+      ensure_ipv6_router_advertisements_are_not_accepted:
+      - 3.3.11
+      - Ensure ipv6 router advertisements are not accepted
+      - c3_3_11
+      ensure_ipv6_status_is_identified:
+      - 3.1.1
+      - Ensure IPv6 status is identified
+      - c3_1_1
+      ensure_jffs2_kernel_module_is_not_available:
+      - 1.1.1.5
+      - Ensure jffs2 kernel module is not available
+      - c1_1_1_5
+      ensure_journald_is_configured_to_compress_large_log_files:
+      - 5.1.2.3
+      - Ensure journald is configured to compress large log files
+      - c5_1_2_3
+      ensure_journald_is_configured_to_send_logs_to_rsyslog:
+      - 5.1.1.3
+      - Ensure journald is configured to send logs to rsyslog
+      - c5_1_1_3
+      ensure_journald_is_configured_to_write_logfiles_to_persistent_disk:
+      - 5.1.2.4
+      - Ensure journald is configured to write logfiles to persistent disk
+      - c5_1_2_4
+      ensure_journald_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.2.1.4
+      - Ensure journald is not configured to receive logs from a remote client
+      - c5_1_2_1_4
+      ensure_journald_is_not_configured_to_send_logs_to_rsyslog:
+      - 5.1.2.5
+      - Ensure journald is not configured to send logs to rsyslog
+      - c5_1_2_5
+      ensure_journald_log_rotation_is_configured_per_site_policy:
+      - 5.1.2.6
+      - Ensure journald log rotation is configured per site policy
+      - c5_1_2_6
+      ensure_journald_service_is_enabled:
+      - 5.1.2.2
+      - Ensure journald service is enabled
+      - c5_1_2_2
+      ensure_latest_version_of_authselect_is_installed:
+      - 4.4.1.2
+      - Ensure latest version of authselect is installed
+      - c4_4_1_2
+      ensure_latest_version_of_pam_is_installed:
+      - 4.4.1.1
+      - Ensure latest version of pam is installed
+      - c4_4_1_1
+      ensure_local_interactive_user_dot_files_access_is_configured:
+      - 6.2.11
+      - Ensure local interactive user dot files access is configured
+      - c6_2_11
+      ensure_local_interactive_user_home_directories_are_configured:
+      - 6.2.10
+      - Ensure local interactive user home directories are configured
+      - c6_2_10
+      ensure_local_login_warning_banner_is_configured_properly:
+      - 1.7.2
+      - Ensure local login warning banner is configured properly
+      - c1_7_2
+      ensure_logging_is_configured:
+      - 5.1.1.5
+      - Ensure logging is configured
+      - c5_1_1_5
+      ensure_logrotate_is_configured:
+      - 5.1.3
+      - Ensure logrotate is configured
+      - c5_1_3
+      ensure_mail_transfer_agents_are_configured_for_local_only_mode:
+      - 2.2.21
+      - Ensure mail transfer agents are configured for local-only mode
+      - c2_2_21
+      ensure_message_access_server_services_are_not_in_use:
+      - 2.2.8
+      - Ensure message access server services are not in use
+      - c2_2_8
+      ensure_message_of_the_day_is_configured_properly:
+      - 1.7.1
+      - Ensure message of the day is configured properly
+      - c1_7_1
+      ensure_network_file_system_services_are_not_in_use:
+      - 2.2.9
+      - Ensure network file system services are not in use
+      - c2_2_9
+      ensure_nftables_base_chains_exist:
+      - 3.4.2.1
+      - Ensure nftables base chains exist
+      - c3_4_2_1
+      ensure_nftables_default_deny_firewall_policy:
+      - 3.4.2.5
+      - Ensure nftables default deny firewall policy
+      - c3_4_2_5
+      ensure_nftables_established_connections_are_configured:
+      - 3.4.2.4
+      - Ensure nftables established connections are configured
+      - c3_4_2_4
+      ensure_nftables_is_installed:
+      - 3.4.1.1
+      - Ensure nftables is installed
+      - c3_4_1_1
+      ensure_nis_client_is_not_installed:
+      - 2.3.3
+      - Ensure nis client is not installed
+      - c2_3_3
+      ensure_nis_server_services_are_not_in_use:
+      - 2.2.10
+      - Ensure nis server services are not in use
+      - c2_2_10
+      ensure_no_duplicate_gids_exist:
+      - 6.2.5
+      - Ensure no duplicate GIDs exist
+      - c6_2_5
+      ensure_no_duplicate_group_names_exist:
+      - 6.2.7
+      - Ensure no duplicate group names exist
+      - c6_2_7
+      ensure_no_duplicate_uids_exist:
+      - 6.2.4
+      - Ensure no duplicate UIDs exist
+      - c6_2_4
+      ensure_no_duplicate_user_names_exist:
+      - 6.2.6
+      - Ensure no duplicate user names exist
+      - c6_2_6
+      ensure_no_unconfined_services_exist:
+      - 1.5.1.6
+      - Ensure no unconfined services exist
+      - c1_5_1_6
+      ensure_no_unowned_or_ungrouped_files_or_directories_exist:
+      - 6.1.12
+      - Ensure no unowned or ungrouped files or directories exist
+      - c6_1_12
+      ensure_nodev_option_set_on_devshm_partition:
+      - 1.1.2.2.2
+      - Ensure nodev option set on /dev/shm partition
+      - c1_1_2_2_2
+      ensure_nodev_option_set_on_home_partition:
+      - 1.1.2.3.2
+      - Ensure nodev option set on /home partition
+      - c1_1_2_3_2
+      ensure_nodev_option_set_on_tmp_partition:
+      - 1.1.2.1.2
+      - Ensure nodev option set on /tmp partition
+      - c1_1_2_1_2
+      ensure_nodev_option_set_on_var_partition:
+      - 1.1.2.4.2
+      - Ensure nodev option set on /var partition
+      - c1_1_2_4_2
+      ensure_nodev_option_set_on_varlog_partition:
+      - 1.1.2.6.2
+      - Ensure nodev option set on /var/log partition
+      - c1_1_2_6_2
+      ensure_nodev_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.2
+      - Ensure nodev option set on /var/log/audit partition
+      - c1_1_2_7_2
+      ensure_nodev_option_set_on_vartmp_partition:
+      - 1.1.2.5.2
+      - Ensure nodev option set on /var/tmp partition
+      - c1_1_2_5_2
+      ensure_noexec_option_set_on_devshm_partition:
+      - 1.1.2.2.4
+      - Ensure noexec option set on /dev/shm partition
+      - c1_1_2_2_4
+      ensure_noexec_option_set_on_tmp_partition:
+      - 1.1.2.1.4
+      - Ensure noexec option set on /tmp partition
+      - c1_1_2_1_4
+      ensure_noexec_option_set_on_varlog_partition:
+      - 1.1.2.6.4
+      - Ensure noexec option set on /var/log partition
+      - c1_1_2_6_4
+      ensure_noexec_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.4
+      - Ensure noexec option set on /var/log/audit partition
+      - c1_1_2_7_4
+      ensure_noexec_option_set_on_vartmp_partition:
+      - 1.1.2.5.4
+      - Ensure noexec option set on /var/tmp partition
+      - c1_1_2_5_4
+      ensure_nosuid_option_set_on_devshm_partition:
+      - 1.1.2.2.3
+      - Ensure nosuid option set on /dev/shm partition
+      - c1_1_2_2_3
+      ensure_nosuid_option_set_on_home_partition:
+      - 1.1.2.3.3
+      - Ensure nosuid option set on /home partition
+      - c1_1_2_3_3
+      ensure_nosuid_option_set_on_tmp_partition:
+      - 1.1.2.1.3
+      - Ensure nosuid option set on /tmp partition
+      - c1_1_2_1_3
+      ensure_nosuid_option_set_on_var_partition:
+      - 1.1.2.4.3
+      - Ensure nosuid option set on /var partition
+      - c1_1_2_4_3
+      ensure_nosuid_option_set_on_varlog_partition:
+      - 1.1.2.6.3
+      - Ensure nosuid option set on /var/log partition
+      - c1_1_2_6_3
+      ensure_nosuid_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.3
+      - Ensure nosuid option set on /var/log/audit partition
+      - c1_1_2_7_3
+      ensure_nosuid_option_set_on_vartmp_partition:
+      - 1.1.2.5.3
+      - Ensure nosuid option set on /var/tmp partition
+      - c1_1_2_5_3
+      ensure_only_approved_services_are_listening_on_a_network_interface:
+      - 2.2.22
+      - Ensure only approved services are listening on a network interface
+      - c2_2_22
+      ensure_package_manager_repositories_are_configured:
+      - 1.2.4
+      - Ensure package manager repositories are configured
+      - c1_2_4
+      ensure_packet_redirect_sending_is_disabled:
+      - 3.3.2
+      - Ensure packet redirect sending is disabled
+      - c3_3_2
+      ensure_pam_faillock_module_is_enabled:
+      - 4.4.2.2
+      - Ensure pam_faillock module is enabled
+      - c4_4_2_2
+      ensure_pam_pwhistory_includes_use_authtok:
+      - 4.4.3.3.3
+      - Ensure pam_pwhistory includes use_authtok
+      - c4_4_3_3_3
+      ensure_pam_pwhistory_module_is_enabled:
+      - 4.4.2.4
+      - Ensure pam_pwhistory module is enabled
+      - c4_4_2_4
+      ensure_pam_pwquality_module_is_enabled:
+      - 4.4.2.3
+      - Ensure pam_pwquality module is enabled
+      - c4_4_2_3
+      ensure_pam_unix_does_not_include_nullok:
+      - 4.4.3.4.1
+      - Ensure pam_unix does not include nullok
+      - c4_4_3_4_1
+      ensure_pam_unix_does_not_include_remember:
+      - 4.4.3.4.2
+      - Ensure pam_unix does not include remember
+      - c4_4_3_4_2
+      ensure_pam_unix_includes_a_strong_password_hashing_algorithm:
+      - 4.4.3.4.3
+      - Ensure pam_unix includes a strong password hashing algorithm
+      - c4_4_3_4_3
+      ensure_pam_unix_includes_use_authtok:
+      - 4.4.3.4.4
+      - Ensure pam_unix includes use_authtok
+      - c4_4_3_4_4
+      ensure_pam_unix_module_is_enabled:
+      - 4.4.2.5
+      - Ensure pam_unix module is enabled
+      - c4_4_2_5
+      ensure_password_complexity_is_configured:
+      - 4.4.3.2.3
+      - Ensure password complexity is configured
+      - c4_4_3_2_3
+      ensure_password_dictionary_check_is_enabled:
+      - 4.4.3.2.6
+      - Ensure password dictionary check is enabled
+      - c4_4_3_2_6
+      ensure_password_expiration_is_365_days_or_less:
+      - 4.5.1.2
+      - Ensure password expiration is 365 days or less
+      - c4_5_1_2
+      ensure_password_expiration_warning_days_is_7_or_more:
+      - 4.5.1.3
+      - Ensure password expiration warning days is 7 or more
+      - c4_5_1_3
+      ensure_password_failed_attempts_lockout_is_configured:
+      - 4.4.3.1.1
+      - Ensure password failed attempts lockout is configured
+      - c4_4_3_1_1
+      ensure_password_history_is_enforced_for_the_root_user:
+      - 4.4.3.3.2
+      - Ensure password history is enforced for the root user
+      - c4_4_3_3_2
+      ensure_password_history_remember_is_configured:
+      - 4.4.3.3.1
+      - Ensure password history remember is configured
+      - c4_4_3_3_1
+      ensure_password_length_is_configured:
+      - 4.4.3.2.2
+      - Ensure password length is configured
+      - c4_4_3_2_2
+      ensure_password_maximum_sequential_characters_is_configured:
+      - 4.4.3.2.5
+      - Ensure password maximum sequential characters is configured
+      - c4_4_3_2_5
+      ensure_password_number_of_changed_characters_is_configured:
+      - 4.4.3.2.1
+      - Ensure password number of changed characters is configured
+      - c4_4_3_2_1
+      ensure_password_quality_is_enforced_for_the_root_user:
+      - 4.4.3.2.7
+      - Ensure password quality is enforced for the root user
+      - c4_4_3_2_7
+      ensure_password_same_consecutive_characters_is_configured:
+      - 4.4.3.2.4
+      - Ensure password same consecutive characters is configured
+      - c4_4_3_2_4
+      ensure_password_unlock_time_is_configured:
+      - 4.4.3.1.2
+      - Ensure password unlock time is configured
+      - c4_4_3_1_2
+      ensure_permissions_on_bootloader_config_are_configured:
+      - 1.3.2
+      - Ensure permissions on bootloader config are configured
+      - c1_3_2
+      ensure_permissions_on_etccron_d_are_configured:
+      - 4.1.1.7
+      - Ensure permissions on /etc/cron.d are configured
+      - c4_1_1_7
+      ensure_permissions_on_etccron_daily_are_configured:
+      - 4.1.1.4
+      - Ensure permissions on /etc/cron.daily are configured
+      - c4_1_1_4
+      ensure_permissions_on_etccron_hourly_are_configured:
+      - 4.1.1.3
+      - Ensure permissions on /etc/cron.hourly are configured
+      - c4_1_1_3
+      ensure_permissions_on_etccron_monthly_are_configured:
+      - 4.1.1.6
+      - Ensure permissions on /etc/cron.monthly are configured
+      - c4_1_1_6
+      ensure_permissions_on_etccron_weekly_are_configured:
+      - 4.1.1.5
+      - Ensure permissions on /etc/cron.weekly are configured
+      - c4_1_1_5
+      ensure_permissions_on_etccrontab_are_configured:
+      - 4.1.1.2
+      - Ensure permissions on /etc/crontab are configured
+      - c4_1_1_2
+      ensure_permissions_on_etcgroup__are_configured:
+      - 6.1.5
+      - Ensure permissions on /etc/group- are configured
+      - c6_1_5
+      ensure_permissions_on_etcgroup_are_configured:
+      - 6.1.4
+      - Ensure permissions on /etc/group are configured
+      - c6_1_4
+      ensure_permissions_on_etcgshadow__are_configured:
+      - 6.1.9
+      - Ensure permissions on /etc/gshadow- are configured
+      - c6_1_9
+      ensure_permissions_on_etcgshadow_are_configured:
+      - 6.1.8
+      - Ensure permissions on /etc/gshadow are configured
+      - c6_1_8
+      ensure_permissions_on_etcopasswd_are_configured:
+      - 6.1.3
+      - Ensure permissions on /etc/opasswd are configured
+      - c6_1_3
+      ensure_permissions_on_etcpasswd__are_configured:
+      - 6.1.2
+      - Ensure permissions on /etc/passwd- are configured
+      - c6_1_2
+      ensure_permissions_on_etcpasswd_are_configured:
+      - 6.1.1
+      - Ensure permissions on /etc/passwd are configured
+      - c6_1_1
+      ensure_permissions_on_etcshadow__are_configured:
+      - 6.1.7
+      - Ensure permissions on /etc/shadow- are configured
+      - c6_1_7
+      ensure_permissions_on_etcshadow_are_configured:
+      - 6.1.6
+      - Ensure permissions on /etc/shadow are configured
+      - c6_1_6
+      ensure_permissions_on_etcshells_are_configured:
+      - 6.1.10
+      - Ensure permissions on /etc/shells are configured
+      - c6_1_10
+      ensure_permissions_on_etcsshsshd_config_are_configured:
+      - 4.2.1
+      - Ensure permissions on /etc/ssh/sshd_config are configured
+      - c4_2_1
+      ensure_permissions_on_ssh_private_host_key_files_are_configured:
+      - 4.2.2
+      - Ensure permissions on SSH private host key files are configured
+      - c4_2_2
+      ensure_permissions_on_ssh_public_host_key_files_are_configured:
+      - 4.2.3
+      - Ensure permissions on SSH public host key files are configured
+      - c4_2_3
+      ensure_print_server_services_are_not_in_use:
+      - 2.2.11
+      - Ensure print server services are not in use
+      - c2_2_11
+      ensure_ptrace_scope_is_restricted:
+      - 1.4.2
+      - Ensure ptrace_scope is restricted
+      - c1_4_2
+      ensure_re_authentication_for_privilege_escalation_is_not_disabled_globally:
+      - 4.3.5
+      - Ensure re-authentication for privilege escalation is not disabled globally
+      - c4_3_5
+      ensure_remote_login_warning_banner_is_configured_properly:
+      - 1.7.3
+      - Ensure remote login warning banner is configured properly
+      - c1_7_3
+      ensure_reverse_path_filtering_is_enabled:
+      - 3.3.7
+      - Ensure reverse path filtering is enabled
+      - c3_3_7
+      ensure_root_is_the_only_uid_0_account:
+      - 6.2.9
+      - Ensure root is the only UID 0 account
+      - c6_2_9
+      ensure_root_password_is_set:
+      - 4.5.2.4
+      - Ensure root password is set
+      - c4_5_2_4
+      ensure_root_path_integrity:
+      - 6.2.8
+      - Ensure root path integrity
+      - c6_2_8
+      ensure_root_user_umask_is_configured:
+      - 4.5.2.2
+      - Ensure root user umask is configured
+      - c4_5_2_2
+      ensure_rpcbind_services_are_not_in_use:
+      - 2.2.12
+      - Ensure rpcbind services are not in use
+      - c2_2_12
+      ensure_rsync_services_are_not_in_use:
+      - 2.2.13
+      - Ensure rsync services are not in use
+      - c2_2_13
+      ensure_rsyslog_default_file_permissions_are_configured:
+      - 5.1.1.4
+      - Ensure rsyslog default file permissions are configured
+      - c5_1_1_4
+      ensure_rsyslog_is_configured_to_send_logs_to_a_remote_log_host:
+      - 5.1.1.6
+      - Ensure rsyslog is configured to send logs to a remote log host
+      - c5_1_1_6
+      ensure_rsyslog_is_installed:
+      - 5.1.1.1
+      - Ensure rsyslog is installed
+      - c5_1_1_1
+      ensure_rsyslog_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.1.7
+      - Ensure rsyslog is not configured to receive logs from a remote client
+      - c5_1_1_7
+      ensure_rsyslog_service_is_enabled:
+      - 5.1.1.2
+      - Ensure rsyslog service is enabled
+      - c5_1_1_2
+      ensure_samba_file_server_services_are_not_in_use:
+      - 2.2.6
+      - Ensure samba file server services are not in use
+      - c2_2_6
+      ensure_secure_icmp_redirects_are_not_accepted:
+      - 3.3.6
+      - Ensure secure icmp redirects are not accepted
+      - c3_3_6
+      ensure_selinux_is_installed:
+      - 1.5.1.1
+      - Ensure SELinux is installed
+      - c1_5_1_1
+      ensure_selinux_is_not_disabled_in_bootloader_configuration:
+      - 1.5.1.2
+      - Ensure SELinux is not disabled in bootloader configuration
+      - c1_5_1_2
+      ensure_selinux_policy_is_configured:
+      - 1.5.1.3
+      - Ensure SELinux policy is configured
+      - c1_5_1_3
+      ensure_setroubleshoot_is_not_installed:
+      - 1.5.1.8
+      - Ensure SETroubleshoot is not installed
+      - c1_5_1_8
+      ensure_snmp_services_are_not_in_use:
+      - 2.2.14
+      - Ensure snmp services are not in use
+      - c2_2_14
+      ensure_source_routed_packets_are_not_accepted:
+      - 3.3.8
+      - Ensure source routed packets are not accepted
+      - c3_3_8
+      ensure_sshd_access_is_configured:
+      - 4.2.4
+      - Ensure sshd access is configured
+      - c4_2_4
+      ensure_sshd_banner_is_configured:
+      - 4.2.5
+      - Ensure sshd Banner is configured
+      - c4_2_5
+      ensure_sshd_ciphers_are_configured:
+      - 4.2.6
+      - Ensure sshd Ciphers are configured
+      - c4_2_6
+      ensure_sshd_clientaliveinterval_and_clientalivecountmax_are_configured:
+      - 4.2.7
+      - Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+      - c4_2_7
+      ensure_sshd_crypto_policy_is_not_set:
+      - 4.2.22
+      - Ensure sshd crypto_policy is not set
+      - c4_2_22
+      ensure_sshd_hostbasedauthentication_is_disabled:
+      - 4.2.9
+      - Ensure sshd HostbasedAuthentication is disabled
+      - c4_2_9
+      ensure_sshd_ignorerhosts_is_enabled:
+      - 4.2.10
+      - Ensure sshd IgnoreRhosts is enabled
+      - c4_2_10
+      ensure_sshd_kexalgorithms_is_configured:
+      - 4.2.11
+      - Ensure sshd KexAlgorithms is configured
+      - c4_2_11
+      ensure_sshd_logingracetime_is_configured:
+      - 4.2.12
+      - Ensure sshd LoginGraceTime is configured
+      - c4_2_12
+      ensure_sshd_loglevel_is_configured:
+      - 4.2.13
+      - Ensure sshd LogLevel is configured
+      - c4_2_13
+      ensure_sshd_macs_are_configured:
+      - 4.2.14
+      - Ensure sshd MACs are configured
+      - c4_2_14
+      ensure_sshd_maxauthtries_is_configured:
+      - 4.2.15
+      - Ensure sshd MaxAuthTries is configured
+      - c4_2_15
+      ensure_sshd_maxsessions_is_configured:
+      - 4.2.16
+      - Ensure sshd MaxSessions is configured
+      - c4_2_16
+      ensure_sshd_maxstartups_is_configured:
+      - 4.2.17
+      - Ensure sshd MaxStartups is configured
+      - c4_2_17
+      ensure_sshd_permitemptypasswords_is_disabled:
+      - 4.2.18
+      - Ensure sshd PermitEmptyPasswords is disabled
+      - c4_2_18
+      ensure_sshd_permitrootlogin_is_disabled:
+      - 4.2.19
+      - Ensure sshd PermitRootLogin is disabled
+      - c4_2_19
+      ensure_sshd_permituserenvironment_is_disabled:
+      - 4.2.20
+      - Ensure sshd PermitUserEnvironment is disabled
+      - c4_2_20
+      ensure_sshd_usepam_is_enabled:
+      - 4.2.21
+      - Ensure sshd UsePAM is enabled
+      - c4_2_21
+      ensure_strong_password_hashing_algorithm_is_configured:
+      - 4.5.1.1
+      - Ensure strong password hashing algorithm is configured
+      - c4_5_1_1
+      ensure_sudo_authentication_timeout_is_configured_correctly:
+      - 4.3.6
+      - Ensure sudo authentication timeout is configured correctly
+      - c4_3_6
+      ensure_sudo_commands_use_pty:
+      - 4.3.2
+      - Ensure sudo commands use pty
+      - c4_3_2
+      ensure_sudo_is_installed:
+      - 4.3.1
+      - Ensure sudo is installed
+      - c4_3_1
+      ensure_sudo_log_file_exists:
+      - 4.3.3
+      - Ensure sudo log file exists
+      - c4_3_3
+      ensure_suid_and_sgid_files_are_reviewed:
+      - 6.1.13
+      - Ensure SUID and SGID files are reviewed
+      - c6_1_13
+      ensure_suspicious_packets_are_logged:
+      - 3.3.9
+      - Ensure suspicious packets are logged
+      - c3_3_9
+      ensure_system_accounts_are_secured:
+      - 4.5.2.3
+      - Ensure system accounts are secured
+      - c4_5_2_3
+      ensure_system_wide_crypto_policy_disables_cbc_for_ssh:
+      - 1.6.3
+      - Ensure system wide crypto policy disables cbc for ssh
+      - c1_6_3
+      ensure_system_wide_crypto_policy_disables_macs_less_than_128_bits:
+      - 1.6.4
+      - Ensure system wide crypto policy disables macs less than 128 bits
+      - c1_6_4
+      ensure_system_wide_crypto_policy_disables_sha1_hash_and_signature_support:
+      - 1.6.2
+      - Ensure system wide crypto policy disables sha1 hash and signature support
+      - c1_6_2
+      ensure_system_wide_crypto_policy_is_not_set_to_legacy:
+      - 1.6.1
+      - Ensure system wide crypto policy is not set to legacy
+      - c1_6_1
+      ensure_systemd_journal_remote_is_configured:
+      - 5.1.2.1.2
+      - Ensure systemd-journal-remote is configured
+      - c5_1_2_1_2
+      ensure_systemd_journal_remote_is_enabled:
+      - 5.1.2.1.3
+      - Ensure systemd-journal-remote is enabled
+      - c5_1_2_1_3
+      ensure_systemd_journal_remote_is_installed:
+      - 5.1.2.1.1
+      - Ensure systemd-journal-remote is installed
+      - c5_1_2_1_1
+      ensure_tcp_syn_cookies_is_enabled:
+      - 3.3.10
+      - Ensure tcp syn cookies is enabled
+      - c3_3_10
+      ensure_telnet_client_is_not_installed:
+      - 2.3.4
+      - Ensure telnet client is not installed
+      - c2_3_4
+      ensure_telnet_server_services_are_not_in_use:
+      - 2.2.15
+      - Ensure telnet server services are not in use
+      - c2_2_15
+      ensure_tftp_client_is_not_installed:
+      - 2.3.5
+      - Ensure tftp client is not installed
+      - c2_3_5
+      ensure_tftp_server_services_are_not_in_use:
+      - 2.2.16
+      - Ensure tftp server services are not in use
+      - c2_2_16
+      ensure_the_mcs_translation_service_mcstrans_is_not_installed:
+      - 1.5.1.7
+      - Ensure the MCS Translation Service (mcstrans) is not installed
+      - c1_5_1_7
+      ensure_the_selinux_mode_is_not_disabled:
+      - 1.5.1.4
+      - Ensure the SELinux mode is not disabled
+      - c1_5_1_4
+      ensure_time_synchronization_is_in_use:
+      - 2.1.1
+      - Ensure time synchronization is in use
+      - c2_1_1
+      ensure_tmp_is_a_separate_partition:
+      - 1.1.2.1.1
+      - Ensure /tmp is a separate partition
+      - c1_1_2_1_1
+      ensure_updates_patches_and_additional_security_software_are_installed:
+      - 1.2.5
+      - Ensure updates, patches, and additional security software are installed
+      - c1_2_5
+      ensure_usb_storage_kernel_module_is_not_available:
+      - 1.1.1.8
+      - Ensure usb-storage kernel module is not available
+      - c1_1_1_8
+      ensure_web_proxy_server_services_are_not_in_use:
+      - 2.2.17
+      - Ensure web proxy server services are not in use
+      - c2_2_17
+      ensure_web_server_services_are_not_in_use:
+      - 2.2.18
+      - Ensure web server services are not in use
+      - c2_2_18
+      ensure_wireless_interfaces_are_disabled:
+      - 3.1.2
+      - Ensure wireless interfaces are disabled
+      - c3_1_2
+      ensure_world_writable_files_and_directories_are_secured:
+      - 6.1.11
+      - Ensure world writable files and directories are secured
+      - c6_1_11
+      ensure_xdmcp_is_not_enabled:
+      - 1.8.10
+      - Ensure XDMCP is not enabled
+      - c1_8_10
+      ensure_xinetd_services_are_not_in_use:
+      - 2.2.19
+      - Ensure xinetd services are not in use
+      - c2_2_19
+    workstation:
+      ensure_a_single_firewall_configuration_utility_is_in_use:
+      - 3.4.1.2
+      - Ensure a single firewall configuration utility is in use
+      - c3_4_1_2
+      ensure_access_to_etcissue_is_configured:
+      - 1.7.5
+      - Ensure access to /etc/issue is configured
+      - c1_7_5
+      ensure_access_to_etcissue_net_is_configured:
+      - 1.7.6
+      - Ensure access to /etc/issue.net is configured
+      - c1_7_6
+      ensure_access_to_etcmotd_is_configured:
+      - 1.7.4
+      - Ensure access to /etc/motd is configured
+      - c1_7_4
+      ensure_access_to_the_su_command_is_restricted:
+      - 4.3.7
+      - Ensure access to the su command is restricted
+      - c4_3_7
+      ensure_accounts_in_etcpasswd_use_shadowed_passwords:
+      - 6.2.1
+      - Ensure accounts in /etc/passwd use shadowed passwords
+      - c6_2_1
+      ensure_active_authselect_profile_includes_pam_modules:
+      - 4.4.2.1
+      - Ensure active authselect profile includes pam modules
+      - c4_4_2_1
+      ensure_address_space_layout_randomization_aslr_is_enabled:
+      - 1.4.1
+      - Ensure address space layout randomization (ASLR) is enabled
+      - c1_4_1
+      ensure_aide_is_installed:
+      - 5.3.1
+      - Ensure AIDE is installed
+      - c5_3_1
+      ensure_all_groups_in_etcpasswd_exist_in_etcgroup:
+      - 6.2.3
+      - Ensure all groups in /etc/passwd exist in /etc/group
+      - c6_2_3
+      ensure_all_logfiles_have_appropriate_access_configured:
+      - 5.1.4
+      - Ensure all logfiles have appropriate access configured
+      - c5_1_4
+      ensure_all_users_last_password_change_date_is_in_the_past:
+      - 4.5.1.5
+      - Ensure all users last password change date is in the past
+      - c4_5_1_5
+      ensure_at_is_restricted_to_authorized_users:
+      - 4.1.2.1
+      - Ensure at is restricted to authorized users
+      - c4_1_2_1
+      ensure_bogus_icmp_responses_are_ignored:
+      - 3.3.3
+      - Ensure bogus icmp responses are ignored
+      - c3_3_3
+      ensure_bootloader_password_is_set:
+      - 1.3.1
+      - Ensure bootloader password is set
+      - c1_3_1
+      ensure_broadcast_icmp_requests_are_ignored:
+      - 3.3.4
+      - Ensure broadcast icmp requests are ignored
+      - c3_3_4
+      ensure_chrony_is_configured:
+      - 2.1.2
+      - Ensure chrony is configured
+      - c2_1_2
+      ensure_chrony_is_not_run_as_the_root_user:
+      - 2.1.3
+      - Ensure chrony is not run as the root user
+      - c2_1_3
+      ensure_core_dump_backtraces_are_disabled:
+      - 1.4.3
+      - Ensure core dump backtraces are disabled
+      - c1_4_3
+      ensure_core_dump_storage_is_disabled:
+      - 1.4.4
+      - Ensure core dump storage is disabled
+      - c1_4_4
+      ensure_cramfs_kernel_module_is_not_available:
+      - 1.1.1.1
+      - Ensure cramfs kernel module is not available
+      - c1_1_1_1
+      ensure_cron_daemon_is_enabled_and_active:
+      - 4.1.1.1
+      - Ensure cron daemon is enabled and active
+      - c4_1_1_1
+      ensure_crontab_is_restricted_to_authorized_users:
+      - 4.1.1.8
+      - Ensure crontab is restricted to authorized users
+      - c4_1_1_8
+      ensure_cryptographic_mechanisms_are_used_to_protect_the_integrity_of_audit_tools:
+      - 5.3.3
+      - Ensure cryptographic mechanisms are used to protect the integrity of audit
+        tools
+      - c5_3_3
+      ensure_default_group_for_the_root_account_is_gid_0:
+      - 4.5.2.1
+      - Ensure default group for the root account is GID 0
+      - c4_5_2_1
+      ensure_default_user_shell_timeout_is_configured:
+      - 4.5.3.2
+      - Ensure default user shell timeout is configured
+      - c4_5_3_2
+      ensure_default_user_umask_is_configured:
+      - 4.5.3.3
+      - Ensure default user umask is configured
+      - c4_5_3_3
+      ensure_devshm_is_a_separate_partition:
+      - 1.1.2.2.1
+      - Ensure /dev/shm is a separate partition
+      - c1_1_2_2_1
+      ensure_dhcp_server_services_are_not_in_use:
+      - 2.2.3
+      - Ensure dhcp server services are not in use
+      - c2_2_3
+      ensure_dns_server_services_are_not_in_use:
+      - 2.2.4
+      - Ensure dns server services are not in use
+      - c2_2_4
+      ensure_dnsmasq_services_are_not_in_use:
+      - 2.2.5
+      - Ensure dnsmasq services are not in use
+      - c2_2_5
+      ensure_etcshadow_password_fields_are_not_empty:
+      - 6.2.2
+      - Ensure /etc/shadow password fields are not empty
+      - c6_2_2
+      ensure_filesystem_integrity_is_regularly_checked:
+      - 5.3.2
+      - Ensure filesystem integrity is regularly checked
+      - c5_3_2
+      ensure_firewalld_drops_unnecessary_services_and_ports:
+      - 3.4.2.3
+      - Ensure firewalld drops unnecessary services and ports
+      - c3_4_2_3
+      ensure_freevxfs_kernel_module_is_not_available:
+      - 1.1.1.2
+      - Ensure freevxfs kernel module is not available
+      - c1_1_1_2
+      ensure_ftp_client_is_not_installed:
+      - 2.3.1
+      - Ensure ftp client is not installed
+      - c2_3_1
+      ensure_ftp_server_services_are_not_in_use:
+      - 2.2.7
+      - Ensure ftp server services are not in use
+      - c2_2_7
+      ensure_gdm_autorun_never_is_enabled:
+      - 1.8.8
+      - Ensure GDM autorun-never is enabled
+      - c1_8_8
+      ensure_gdm_autorun_never_is_not_overridden:
+      - 1.8.9
+      - Ensure GDM autorun-never is not overridden
+      - c1_8_9
+      ensure_gdm_disable_user_list_option_is_enabled:
+      - 1.8.3
+      - Ensure GDM disable-user-list option is enabled
+      - c1_8_3
+      ensure_gdm_login_banner_is_configured:
+      - 1.8.2
+      - Ensure GDM login banner is configured
+      - c1_8_2
+      ensure_gdm_screen_locks_cannot_be_overridden:
+      - 1.8.5
+      - Ensure GDM screen locks cannot be overridden
+      - c1_8_5
+      ensure_gdm_screen_locks_when_the_user_is_idle:
+      - 1.8.4
+      - Ensure GDM screen locks when the user is idle
+      - c1_8_4
+      ensure_gpg_keys_are_configured:
+      - 1.2.1
+      - Ensure GPG keys are configured
+      - c1_2_1
+      ensure_gpgcheck_is_globally_activated:
+      - 1.2.2
+      - Ensure gpgcheck is globally activated
+      - c1_2_2
+      ensure_hfs_kernel_module_is_not_available:
+      - 1.1.1.3
+      - Ensure hfs kernel module is not available
+      - c1_1_1_3
+      ensure_hfsplus_kernel_module_is_not_available:
+      - 1.1.1.4
+      - Ensure hfsplus kernel module is not available
+      - c1_1_1_4
+      ensure_host_based_firewall_loopback_traffic_is_configured:
+      - 3.4.2.2
+      - Ensure host based firewall loopback traffic is configured
+      - c3_4_2_2
+      ensure_icmp_redirects_are_not_accepted:
+      - 3.3.5
+      - Ensure icmp redirects are not accepted
+      - c3_3_5
+      ensure_inactive_password_lock_is_30_days_or_less:
+      - 4.5.1.4
+      - Ensure inactive password lock is 30 days or less
+      - c4_5_1_4
+      ensure_ip_forwarding_is_disabled:
+      - 3.3.1
+      - Ensure ip forwarding is disabled
+      - c3_3_1
+      ensure_ipv6_router_advertisements_are_not_accepted:
+      - 3.3.11
+      - Ensure ipv6 router advertisements are not accepted
+      - c3_3_11
+      ensure_ipv6_status_is_identified:
+      - 3.1.1
+      - Ensure IPv6 status is identified
+      - c3_1_1
+      ensure_jffs2_kernel_module_is_not_available:
+      - 1.1.1.5
+      - Ensure jffs2 kernel module is not available
+      - c1_1_1_5
+      ensure_journald_is_configured_to_compress_large_log_files:
+      - 5.1.2.3
+      - Ensure journald is configured to compress large log files
+      - c5_1_2_3
+      ensure_journald_is_configured_to_send_logs_to_rsyslog:
+      - 5.1.1.3
+      - Ensure journald is configured to send logs to rsyslog
+      - c5_1_1_3
+      ensure_journald_is_configured_to_write_logfiles_to_persistent_disk:
+      - 5.1.2.4
+      - Ensure journald is configured to write logfiles to persistent disk
+      - c5_1_2_4
+      ensure_journald_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.2.1.4
+      - Ensure journald is not configured to receive logs from a remote client
+      - c5_1_2_1_4
+      ensure_journald_is_not_configured_to_send_logs_to_rsyslog:
+      - 5.1.2.5
+      - Ensure journald is not configured to send logs to rsyslog
+      - c5_1_2_5
+      ensure_journald_log_rotation_is_configured_per_site_policy:
+      - 5.1.2.6
+      - Ensure journald log rotation is configured per site policy
+      - c5_1_2_6
+      ensure_journald_service_is_enabled:
+      - 5.1.2.2
+      - Ensure journald service is enabled
+      - c5_1_2_2
+      ensure_latest_version_of_authselect_is_installed:
+      - 4.4.1.2
+      - Ensure latest version of authselect is installed
+      - c4_4_1_2
+      ensure_latest_version_of_pam_is_installed:
+      - 4.4.1.1
+      - Ensure latest version of pam is installed
+      - c4_4_1_1
+      ensure_local_interactive_user_dot_files_access_is_configured:
+      - 6.2.11
+      - Ensure local interactive user dot files access is configured
+      - c6_2_11
+      ensure_local_interactive_user_home_directories_are_configured:
+      - 6.2.10
+      - Ensure local interactive user home directories are configured
+      - c6_2_10
+      ensure_local_login_warning_banner_is_configured_properly:
+      - 1.7.2
+      - Ensure local login warning banner is configured properly
+      - c1_7_2
+      ensure_logging_is_configured:
+      - 5.1.1.5
+      - Ensure logging is configured
+      - c5_1_1_5
+      ensure_logrotate_is_configured:
+      - 5.1.3
+      - Ensure logrotate is configured
+      - c5_1_3
+      ensure_mail_transfer_agents_are_configured_for_local_only_mode:
+      - 2.2.21
+      - Ensure mail transfer agents are configured for local-only mode
+      - c2_2_21
+      ensure_message_access_server_services_are_not_in_use:
+      - 2.2.8
+      - Ensure message access server services are not in use
+      - c2_2_8
+      ensure_message_of_the_day_is_configured_properly:
+      - 1.7.1
+      - Ensure message of the day is configured properly
+      - c1_7_1
+      ensure_network_file_system_services_are_not_in_use:
+      - 2.2.9
+      - Ensure network file system services are not in use
+      - c2_2_9
+      ensure_nftables_base_chains_exist:
+      - 3.4.2.1
+      - Ensure nftables base chains exist
+      - c3_4_2_1
+      ensure_nftables_default_deny_firewall_policy:
+      - 3.4.2.5
+      - Ensure nftables default deny firewall policy
+      - c3_4_2_5
+      ensure_nftables_established_connections_are_configured:
+      - 3.4.2.4
+      - Ensure nftables established connections are configured
+      - c3_4_2_4
+      ensure_nftables_is_installed:
+      - 3.4.1.1
+      - Ensure nftables is installed
+      - c3_4_1_1
+      ensure_nis_client_is_not_installed:
+      - 2.3.3
+      - Ensure nis client is not installed
+      - c2_3_3
+      ensure_nis_server_services_are_not_in_use:
+      - 2.2.10
+      - Ensure nis server services are not in use
+      - c2_2_10
+      ensure_no_duplicate_gids_exist:
+      - 6.2.5
+      - Ensure no duplicate GIDs exist
+      - c6_2_5
+      ensure_no_duplicate_group_names_exist:
+      - 6.2.7
+      - Ensure no duplicate group names exist
+      - c6_2_7
+      ensure_no_duplicate_uids_exist:
+      - 6.2.4
+      - Ensure no duplicate UIDs exist
+      - c6_2_4
+      ensure_no_duplicate_user_names_exist:
+      - 6.2.6
+      - Ensure no duplicate user names exist
+      - c6_2_6
+      ensure_no_unconfined_services_exist:
+      - 1.5.1.6
+      - Ensure no unconfined services exist
+      - c1_5_1_6
+      ensure_no_unowned_or_ungrouped_files_or_directories_exist:
+      - 6.1.12
+      - Ensure no unowned or ungrouped files or directories exist
+      - c6_1_12
+      ensure_nodev_option_set_on_devshm_partition:
+      - 1.1.2.2.2
+      - Ensure nodev option set on /dev/shm partition
+      - c1_1_2_2_2
+      ensure_nodev_option_set_on_home_partition:
+      - 1.1.2.3.2
+      - Ensure nodev option set on /home partition
+      - c1_1_2_3_2
+      ensure_nodev_option_set_on_tmp_partition:
+      - 1.1.2.1.2
+      - Ensure nodev option set on /tmp partition
+      - c1_1_2_1_2
+      ensure_nodev_option_set_on_var_partition:
+      - 1.1.2.4.2
+      - Ensure nodev option set on /var partition
+      - c1_1_2_4_2
+      ensure_nodev_option_set_on_varlog_partition:
+      - 1.1.2.6.2
+      - Ensure nodev option set on /var/log partition
+      - c1_1_2_6_2
+      ensure_nodev_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.2
+      - Ensure nodev option set on /var/log/audit partition
+      - c1_1_2_7_2
+      ensure_nodev_option_set_on_vartmp_partition:
+      - 1.1.2.5.2
+      - Ensure nodev option set on /var/tmp partition
+      - c1_1_2_5_2
+      ensure_noexec_option_set_on_devshm_partition:
+      - 1.1.2.2.4
+      - Ensure noexec option set on /dev/shm partition
+      - c1_1_2_2_4
+      ensure_noexec_option_set_on_tmp_partition:
+      - 1.1.2.1.4
+      - Ensure noexec option set on /tmp partition
+      - c1_1_2_1_4
+      ensure_noexec_option_set_on_varlog_partition:
+      - 1.1.2.6.4
+      - Ensure noexec option set on /var/log partition
+      - c1_1_2_6_4
+      ensure_noexec_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.4
+      - Ensure noexec option set on /var/log/audit partition
+      - c1_1_2_7_4
+      ensure_noexec_option_set_on_vartmp_partition:
+      - 1.1.2.5.4
+      - Ensure noexec option set on /var/tmp partition
+      - c1_1_2_5_4
+      ensure_nosuid_option_set_on_devshm_partition:
+      - 1.1.2.2.3
+      - Ensure nosuid option set on /dev/shm partition
+      - c1_1_2_2_3
+      ensure_nosuid_option_set_on_home_partition:
+      - 1.1.2.3.3
+      - Ensure nosuid option set on /home partition
+      - c1_1_2_3_3
+      ensure_nosuid_option_set_on_tmp_partition:
+      - 1.1.2.1.3
+      - Ensure nosuid option set on /tmp partition
+      - c1_1_2_1_3
+      ensure_nosuid_option_set_on_var_partition:
+      - 1.1.2.4.3
+      - Ensure nosuid option set on /var partition
+      - c1_1_2_4_3
+      ensure_nosuid_option_set_on_varlog_partition:
+      - 1.1.2.6.3
+      - Ensure nosuid option set on /var/log partition
+      - c1_1_2_6_3
+      ensure_nosuid_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.3
+      - Ensure nosuid option set on /var/log/audit partition
+      - c1_1_2_7_3
+      ensure_nosuid_option_set_on_vartmp_partition:
+      - 1.1.2.5.3
+      - Ensure nosuid option set on /var/tmp partition
+      - c1_1_2_5_3
+      ensure_only_approved_services_are_listening_on_a_network_interface:
+      - 2.2.22
+      - Ensure only approved services are listening on a network interface
+      - c2_2_22
+      ensure_package_manager_repositories_are_configured:
+      - 1.2.4
+      - Ensure package manager repositories are configured
+      - c1_2_4
+      ensure_packet_redirect_sending_is_disabled:
+      - 3.3.2
+      - Ensure packet redirect sending is disabled
+      - c3_3_2
+      ensure_pam_faillock_module_is_enabled:
+      - 4.4.2.2
+      - Ensure pam_faillock module is enabled
+      - c4_4_2_2
+      ensure_pam_pwhistory_includes_use_authtok:
+      - 4.4.3.3.3
+      - Ensure pam_pwhistory includes use_authtok
+      - c4_4_3_3_3
+      ensure_pam_pwhistory_module_is_enabled:
+      - 4.4.2.4
+      - Ensure pam_pwhistory module is enabled
+      - c4_4_2_4
+      ensure_pam_pwquality_module_is_enabled:
+      - 4.4.2.3
+      - Ensure pam_pwquality module is enabled
+      - c4_4_2_3
+      ensure_pam_unix_does_not_include_nullok:
+      - 4.4.3.4.1
+      - Ensure pam_unix does not include nullok
+      - c4_4_3_4_1
+      ensure_pam_unix_does_not_include_remember:
+      - 4.4.3.4.2
+      - Ensure pam_unix does not include remember
+      - c4_4_3_4_2
+      ensure_pam_unix_includes_a_strong_password_hashing_algorithm:
+      - 4.4.3.4.3
+      - Ensure pam_unix includes a strong password hashing algorithm
+      - c4_4_3_4_3
+      ensure_pam_unix_includes_use_authtok:
+      - 4.4.3.4.4
+      - Ensure pam_unix includes use_authtok
+      - c4_4_3_4_4
+      ensure_pam_unix_module_is_enabled:
+      - 4.4.2.5
+      - Ensure pam_unix module is enabled
+      - c4_4_2_5
+      ensure_password_complexity_is_configured:
+      - 4.4.3.2.3
+      - Ensure password complexity is configured
+      - c4_4_3_2_3
+      ensure_password_dictionary_check_is_enabled:
+      - 4.4.3.2.6
+      - Ensure password dictionary check is enabled
+      - c4_4_3_2_6
+      ensure_password_expiration_is_365_days_or_less:
+      - 4.5.1.2
+      - Ensure password expiration is 365 days or less
+      - c4_5_1_2
+      ensure_password_expiration_warning_days_is_7_or_more:
+      - 4.5.1.3
+      - Ensure password expiration warning days is 7 or more
+      - c4_5_1_3
+      ensure_password_failed_attempts_lockout_is_configured:
+      - 4.4.3.1.1
+      - Ensure password failed attempts lockout is configured
+      - c4_4_3_1_1
+      ensure_password_history_is_enforced_for_the_root_user:
+      - 4.4.3.3.2
+      - Ensure password history is enforced for the root user
+      - c4_4_3_3_2
+      ensure_password_history_remember_is_configured:
+      - 4.4.3.3.1
+      - Ensure password history remember is configured
+      - c4_4_3_3_1
+      ensure_password_length_is_configured:
+      - 4.4.3.2.2
+      - Ensure password length is configured
+      - c4_4_3_2_2
+      ensure_password_maximum_sequential_characters_is_configured:
+      - 4.4.3.2.5
+      - Ensure password maximum sequential characters is configured
+      - c4_4_3_2_5
+      ensure_password_number_of_changed_characters_is_configured:
+      - 4.4.3.2.1
+      - Ensure password number of changed characters is configured
+      - c4_4_3_2_1
+      ensure_password_quality_is_enforced_for_the_root_user:
+      - 4.4.3.2.7
+      - Ensure password quality is enforced for the root user
+      - c4_4_3_2_7
+      ensure_password_same_consecutive_characters_is_configured:
+      - 4.4.3.2.4
+      - Ensure password same consecutive characters is configured
+      - c4_4_3_2_4
+      ensure_password_unlock_time_is_configured:
+      - 4.4.3.1.2
+      - Ensure password unlock time is configured
+      - c4_4_3_1_2
+      ensure_permissions_on_bootloader_config_are_configured:
+      - 1.3.2
+      - Ensure permissions on bootloader config are configured
+      - c1_3_2
+      ensure_permissions_on_etccron_d_are_configured:
+      - 4.1.1.7
+      - Ensure permissions on /etc/cron.d are configured
+      - c4_1_1_7
+      ensure_permissions_on_etccron_daily_are_configured:
+      - 4.1.1.4
+      - Ensure permissions on /etc/cron.daily are configured
+      - c4_1_1_4
+      ensure_permissions_on_etccron_hourly_are_configured:
+      - 4.1.1.3
+      - Ensure permissions on /etc/cron.hourly are configured
+      - c4_1_1_3
+      ensure_permissions_on_etccron_monthly_are_configured:
+      - 4.1.1.6
+      - Ensure permissions on /etc/cron.monthly are configured
+      - c4_1_1_6
+      ensure_permissions_on_etccron_weekly_are_configured:
+      - 4.1.1.5
+      - Ensure permissions on /etc/cron.weekly are configured
+      - c4_1_1_5
+      ensure_permissions_on_etccrontab_are_configured:
+      - 4.1.1.2
+      - Ensure permissions on /etc/crontab are configured
+      - c4_1_1_2
+      ensure_permissions_on_etcgroup__are_configured:
+      - 6.1.5
+      - Ensure permissions on /etc/group- are configured
+      - c6_1_5
+      ensure_permissions_on_etcgroup_are_configured:
+      - 6.1.4
+      - Ensure permissions on /etc/group are configured
+      - c6_1_4
+      ensure_permissions_on_etcgshadow__are_configured:
+      - 6.1.9
+      - Ensure permissions on /etc/gshadow- are configured
+      - c6_1_9
+      ensure_permissions_on_etcgshadow_are_configured:
+      - 6.1.8
+      - Ensure permissions on /etc/gshadow are configured
+      - c6_1_8
+      ensure_permissions_on_etcopasswd_are_configured:
+      - 6.1.3
+      - Ensure permissions on /etc/opasswd are configured
+      - c6_1_3
+      ensure_permissions_on_etcpasswd__are_configured:
+      - 6.1.2
+      - Ensure permissions on /etc/passwd- are configured
+      - c6_1_2
+      ensure_permissions_on_etcpasswd_are_configured:
+      - 6.1.1
+      - Ensure permissions on /etc/passwd are configured
+      - c6_1_1
+      ensure_permissions_on_etcshadow__are_configured:
+      - 6.1.7
+      - Ensure permissions on /etc/shadow- are configured
+      - c6_1_7
+      ensure_permissions_on_etcshadow_are_configured:
+      - 6.1.6
+      - Ensure permissions on /etc/shadow are configured
+      - c6_1_6
+      ensure_permissions_on_etcshells_are_configured:
+      - 6.1.10
+      - Ensure permissions on /etc/shells are configured
+      - c6_1_10
+      ensure_permissions_on_etcsshsshd_config_are_configured:
+      - 4.2.1
+      - Ensure permissions on /etc/ssh/sshd_config are configured
+      - c4_2_1
+      ensure_permissions_on_ssh_private_host_key_files_are_configured:
+      - 4.2.2
+      - Ensure permissions on SSH private host key files are configured
+      - c4_2_2
+      ensure_permissions_on_ssh_public_host_key_files_are_configured:
+      - 4.2.3
+      - Ensure permissions on SSH public host key files are configured
+      - c4_2_3
+      ensure_ptrace_scope_is_restricted:
+      - 1.4.2
+      - Ensure ptrace_scope is restricted
+      - c1_4_2
+      ensure_re_authentication_for_privilege_escalation_is_not_disabled_globally:
+      - 4.3.5
+      - Ensure re-authentication for privilege escalation is not disabled globally
+      - c4_3_5
+      ensure_remote_login_warning_banner_is_configured_properly:
+      - 1.7.3
+      - Ensure remote login warning banner is configured properly
+      - c1_7_3
+      ensure_reverse_path_filtering_is_enabled:
+      - 3.3.7
+      - Ensure reverse path filtering is enabled
+      - c3_3_7
+      ensure_root_is_the_only_uid_0_account:
+      - 6.2.9
+      - Ensure root is the only UID 0 account
+      - c6_2_9
+      ensure_root_password_is_set:
+      - 4.5.2.4
+      - Ensure root password is set
+      - c4_5_2_4
+      ensure_root_path_integrity:
+      - 6.2.8
+      - Ensure root path integrity
+      - c6_2_8
+      ensure_root_user_umask_is_configured:
+      - 4.5.2.2
+      - Ensure root user umask is configured
+      - c4_5_2_2
+      ensure_rpcbind_services_are_not_in_use:
+      - 2.2.12
+      - Ensure rpcbind services are not in use
+      - c2_2_12
+      ensure_rsync_services_are_not_in_use:
+      - 2.2.13
+      - Ensure rsync services are not in use
+      - c2_2_13
+      ensure_rsyslog_default_file_permissions_are_configured:
+      - 5.1.1.4
+      - Ensure rsyslog default file permissions are configured
+      - c5_1_1_4
+      ensure_rsyslog_is_configured_to_send_logs_to_a_remote_log_host:
+      - 5.1.1.6
+      - Ensure rsyslog is configured to send logs to a remote log host
+      - c5_1_1_6
+      ensure_rsyslog_is_installed:
+      - 5.1.1.1
+      - Ensure rsyslog is installed
+      - c5_1_1_1
+      ensure_rsyslog_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.1.7
+      - Ensure rsyslog is not configured to receive logs from a remote client
+      - c5_1_1_7
+      ensure_rsyslog_service_is_enabled:
+      - 5.1.1.2
+      - Ensure rsyslog service is enabled
+      - c5_1_1_2
+      ensure_samba_file_server_services_are_not_in_use:
+      - 2.2.6
+      - Ensure samba file server services are not in use
+      - c2_2_6
+      ensure_secure_icmp_redirects_are_not_accepted:
+      - 3.3.6
+      - Ensure secure icmp redirects are not accepted
+      - c3_3_6
+      ensure_selinux_is_installed:
+      - 1.5.1.1
+      - Ensure SELinux is installed
+      - c1_5_1_1
+      ensure_selinux_is_not_disabled_in_bootloader_configuration:
+      - 1.5.1.2
+      - Ensure SELinux is not disabled in bootloader configuration
+      - c1_5_1_2
+      ensure_selinux_policy_is_configured:
+      - 1.5.1.3
+      - Ensure SELinux policy is configured
+      - c1_5_1_3
+      ensure_snmp_services_are_not_in_use:
+      - 2.2.14
+      - Ensure snmp services are not in use
+      - c2_2_14
+      ensure_source_routed_packets_are_not_accepted:
+      - 3.3.8
+      - Ensure source routed packets are not accepted
+      - c3_3_8
+      ensure_sshd_access_is_configured:
+      - 4.2.4
+      - Ensure sshd access is configured
+      - c4_2_4
+      ensure_sshd_banner_is_configured:
+      - 4.2.5
+      - Ensure sshd Banner is configured
+      - c4_2_5
+      ensure_sshd_ciphers_are_configured:
+      - 4.2.6
+      - Ensure sshd Ciphers are configured
+      - c4_2_6
+      ensure_sshd_clientaliveinterval_and_clientalivecountmax_are_configured:
+      - 4.2.7
+      - Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+      - c4_2_7
+      ensure_sshd_crypto_policy_is_not_set:
+      - 4.2.22
+      - Ensure sshd crypto_policy is not set
+      - c4_2_22
+      ensure_sshd_disableforwarding_is_enabled:
+      - 4.2.8
+      - Ensure sshd DisableForwarding is enabled
+      - c4_2_8
+      ensure_sshd_hostbasedauthentication_is_disabled:
+      - 4.2.9
+      - Ensure sshd HostbasedAuthentication is disabled
+      - c4_2_9
+      ensure_sshd_ignorerhosts_is_enabled:
+      - 4.2.10
+      - Ensure sshd IgnoreRhosts is enabled
+      - c4_2_10
+      ensure_sshd_kexalgorithms_is_configured:
+      - 4.2.11
+      - Ensure sshd KexAlgorithms is configured
+      - c4_2_11
+      ensure_sshd_logingracetime_is_configured:
+      - 4.2.12
+      - Ensure sshd LoginGraceTime is configured
+      - c4_2_12
+      ensure_sshd_loglevel_is_configured:
+      - 4.2.13
+      - Ensure sshd LogLevel is configured
+      - c4_2_13
+      ensure_sshd_macs_are_configured:
+      - 4.2.14
+      - Ensure sshd MACs are configured
+      - c4_2_14
+      ensure_sshd_maxauthtries_is_configured:
+      - 4.2.15
+      - Ensure sshd MaxAuthTries is configured
+      - c4_2_15
+      ensure_sshd_maxsessions_is_configured:
+      - 4.2.16
+      - Ensure sshd MaxSessions is configured
+      - c4_2_16
+      ensure_sshd_maxstartups_is_configured:
+      - 4.2.17
+      - Ensure sshd MaxStartups is configured
+      - c4_2_17
+      ensure_sshd_permitemptypasswords_is_disabled:
+      - 4.2.18
+      - Ensure sshd PermitEmptyPasswords is disabled
+      - c4_2_18
+      ensure_sshd_permitrootlogin_is_disabled:
+      - 4.2.19
+      - Ensure sshd PermitRootLogin is disabled
+      - c4_2_19
+      ensure_sshd_permituserenvironment_is_disabled:
+      - 4.2.20
+      - Ensure sshd PermitUserEnvironment is disabled
+      - c4_2_20
+      ensure_sshd_usepam_is_enabled:
+      - 4.2.21
+      - Ensure sshd UsePAM is enabled
+      - c4_2_21
+      ensure_strong_password_hashing_algorithm_is_configured:
+      - 4.5.1.1
+      - Ensure strong password hashing algorithm is configured
+      - c4_5_1_1
+      ensure_sudo_authentication_timeout_is_configured_correctly:
+      - 4.3.6
+      - Ensure sudo authentication timeout is configured correctly
+      - c4_3_6
+      ensure_sudo_commands_use_pty:
+      - 4.3.2
+      - Ensure sudo commands use pty
+      - c4_3_2
+      ensure_sudo_is_installed:
+      - 4.3.1
+      - Ensure sudo is installed
+      - c4_3_1
+      ensure_sudo_log_file_exists:
+      - 4.3.3
+      - Ensure sudo log file exists
+      - c4_3_3
+      ensure_suid_and_sgid_files_are_reviewed:
+      - 6.1.13
+      - Ensure SUID and SGID files are reviewed
+      - c6_1_13
+      ensure_suspicious_packets_are_logged:
+      - 3.3.9
+      - Ensure suspicious packets are logged
+      - c3_3_9
+      ensure_system_accounts_are_secured:
+      - 4.5.2.3
+      - Ensure system accounts are secured
+      - c4_5_2_3
+      ensure_system_wide_crypto_policy_disables_cbc_for_ssh:
+      - 1.6.3
+      - Ensure system wide crypto policy disables cbc for ssh
+      - c1_6_3
+      ensure_system_wide_crypto_policy_disables_macs_less_than_128_bits:
+      - 1.6.4
+      - Ensure system wide crypto policy disables macs less than 128 bits
+      - c1_6_4
+      ensure_system_wide_crypto_policy_disables_sha1_hash_and_signature_support:
+      - 1.6.2
+      - Ensure system wide crypto policy disables sha1 hash and signature support
+      - c1_6_2
+      ensure_system_wide_crypto_policy_is_not_set_to_legacy:
+      - 1.6.1
+      - Ensure system wide crypto policy is not set to legacy
+      - c1_6_1
+      ensure_systemd_journal_remote_is_configured:
+      - 5.1.2.1.2
+      - Ensure systemd-journal-remote is configured
+      - c5_1_2_1_2
+      ensure_systemd_journal_remote_is_enabled:
+      - 5.1.2.1.3
+      - Ensure systemd-journal-remote is enabled
+      - c5_1_2_1_3
+      ensure_systemd_journal_remote_is_installed:
+      - 5.1.2.1.1
+      - Ensure systemd-journal-remote is installed
+      - c5_1_2_1_1
+      ensure_tcp_syn_cookies_is_enabled:
+      - 3.3.10
+      - Ensure tcp syn cookies is enabled
+      - c3_3_10
+      ensure_telnet_client_is_not_installed:
+      - 2.3.4
+      - Ensure telnet client is not installed
+      - c2_3_4
+      ensure_telnet_server_services_are_not_in_use:
+      - 2.2.15
+      - Ensure telnet server services are not in use
+      - c2_2_15
+      ensure_tftp_client_is_not_installed:
+      - 2.3.5
+      - Ensure tftp client is not installed
+      - c2_3_5
+      ensure_tftp_server_services_are_not_in_use:
+      - 2.2.16
+      - Ensure tftp server services are not in use
+      - c2_2_16
+      ensure_the_mcs_translation_service_mcstrans_is_not_installed:
+      - 1.5.1.7
+      - Ensure the MCS Translation Service (mcstrans) is not installed
+      - c1_5_1_7
+      ensure_the_selinux_mode_is_not_disabled:
+      - 1.5.1.4
+      - Ensure the SELinux mode is not disabled
+      - c1_5_1_4
+      ensure_time_synchronization_is_in_use:
+      - 2.1.1
+      - Ensure time synchronization is in use
+      - c2_1_1
+      ensure_tmp_is_a_separate_partition:
+      - 1.1.2.1.1
+      - Ensure /tmp is a separate partition
+      - c1_1_2_1_1
+      ensure_updates_patches_and_additional_security_software_are_installed:
+      - 1.2.5
+      - Ensure updates, patches, and additional security software are installed
+      - c1_2_5
+      ensure_web_proxy_server_services_are_not_in_use:
+      - 2.2.17
+      - Ensure web proxy server services are not in use
+      - c2_2_17
+      ensure_web_server_services_are_not_in_use:
+      - 2.2.18
+      - Ensure web server services are not in use
+      - c2_2_18
+      ensure_world_writable_files_and_directories_are_secured:
+      - 6.1.11
+      - Ensure world writable files and directories are secured
+      - c6_1_11
+      ensure_xdmcp_is_not_enabled:
+      - 1.8.10
+      - Ensure XDMCP is not enabled
+      - c1_8_10
+      ensure_xinetd_services_are_not_in_use:
+      - 2.2.19
+      - Ensure xinetd services are not in use
+      - c2_2_19
+  level_2:
+    server:
+      audit_system_file_permissions:
+      - 6.1.14
+      - Audit system file permissions
+      - c6_1_14
+      ensure_a_single_firewall_configuration_utility_is_in_use:
+      - 3.4.1.2
+      - Ensure a single firewall configuration utility is in use
+      - c3_4_1_2
+      ensure_access_to_etcissue_is_configured:
+      - 1.7.5
+      - Ensure access to /etc/issue is configured
+      - c1_7_5
+      ensure_access_to_etcissue_net_is_configured:
+      - 1.7.6
+      - Ensure access to /etc/issue.net is configured
+      - c1_7_6
+      ensure_access_to_etcmotd_is_configured:
+      - 1.7.4
+      - Ensure access to /etc/motd is configured
+      - c1_7_4
+      ensure_access_to_the_su_command_is_restricted:
+      - 4.3.7
+      - Ensure access to the su command is restricted
+      - c4_3_7
+      ensure_accounts_in_etcpasswd_use_shadowed_passwords:
+      - 6.2.1
+      - Ensure accounts in /etc/passwd use shadowed passwords
+      - c6_2_1
+      ensure_actions_as_another_user_are_always_logged:
+      - 5.2.3.2
+      - Ensure actions as another user are always logged
+      - c5_2_3_2
+      ensure_active_authselect_profile_includes_pam_modules:
+      - 4.4.2.1
+      - Ensure active authselect profile includes pam modules
+      - c4_4_2_1
+      ensure_address_space_layout_randomization_aslr_is_enabled:
+      - 1.4.1
+      - Ensure address space layout randomization (ASLR) is enabled
+      - c1_4_1
+      ensure_aide_is_installed:
+      - 5.3.1
+      - Ensure AIDE is installed
+      - c5_3_1
+      ensure_all_groups_in_etcpasswd_exist_in_etcgroup:
+      - 6.2.3
+      - Ensure all groups in /etc/passwd exist in /etc/group
+      - c6_2_3
+      ensure_all_logfiles_have_appropriate_access_configured:
+      - 5.1.4
+      - Ensure all logfiles have appropriate access configured
+      - c5_1_4
+      ensure_all_users_last_password_change_date_is_in_the_past:
+      - 4.5.1.5
+      - Ensure all users last password change date is in the past
+      - c4_5_1_5
+      ensure_at_is_restricted_to_authorized_users:
+      - 4.1.2.1
+      - Ensure at is restricted to authorized users
+      - c4_1_2_1
+      ensure_audit_backlog_limit_is_sufficient:
+      - 5.2.1.3
+      - Ensure audit_backlog_limit is sufficient
+      - c5_2_1_3
+      ensure_audit_configuration_files_are_640_or_more_restrictive:
+      - 5.2.4.5
+      - Ensure audit configuration files are 640 or more restrictive
+      - c5_2_4_5
+      ensure_audit_configuration_files_are_owned_by_root:
+      - 5.2.4.6
+      - Ensure audit configuration files are owned by root
+      - c5_2_4_6
+      ensure_audit_configuration_files_belong_to_group_root:
+      - 5.2.4.7
+      - Ensure audit configuration files belong to group root
+      - c5_2_4_7
+      ensure_audit_is_installed:
+      - 5.2.1.1
+      - Ensure audit is installed
+      - c5_2_1_1
+      ensure_audit_log_files_are_mode_0640_or_less_permissive:
+      - 5.2.4.2
+      - Ensure audit log files are mode 0640 or less permissive
+      - c5_2_4_2
+      ensure_audit_log_storage_size_is_configured:
+      - 5.2.2.1
+      - Ensure audit log storage size is configured
+      - c5_2_2_1
+      ensure_audit_logs_are_not_automatically_deleted:
+      - 5.2.2.2
+      - Ensure audit logs are not automatically deleted
+      - c5_2_2_2
+      ensure_audit_tools_are_755_or_more_restrictive:
+      - 5.2.4.8
+      - Ensure audit tools are 755 or more restrictive
+      - c5_2_4_8
+      ensure_audit_tools_are_owned_by_root:
+      - 5.2.4.9
+      - Ensure audit tools are owned by root
+      - c5_2_4_9
+      ensure_audit_tools_belong_to_group_root:
+      - 5.2.4.10
+      - Ensure audit tools belong to group root
+      - c5_2_4_10
+      ensure_auditd_service_is_enabled:
+      - 5.2.1.4
+      - Ensure auditd service is enabled
+      - c5_2_1_4
+      ensure_auditing_for_processes_that_start_prior_to_auditd_is_enabled:
+      - 5.2.1.2
+      - Ensure auditing for processes that start prior to auditd is enabled
+      - c5_2_1_2
+      ensure_autofs_services_are_not_in_use:
+      - 2.2.1
+      - Ensure autofs services are not in use
+      - c2_2_1
+      ensure_avahi_daemon_services_are_not_in_use:
+      - 2.2.2
+      - Ensure avahi daemon services are not in use
+      - c2_2_2
+      ensure_bluetooth_services_are_not_in_use:
+      - 3.1.3
+      - Ensure bluetooth services are not in use
+      - c3_1_3
+      ensure_bogus_icmp_responses_are_ignored:
+      - 3.3.3
+      - Ensure bogus icmp responses are ignored
+      - c3_3_3
+      ensure_bootloader_password_is_set:
+      - 1.3.1
+      - Ensure bootloader password is set
+      - c1_3_1
+      ensure_broadcast_icmp_requests_are_ignored:
+      - 3.3.4
+      - Ensure broadcast icmp requests are ignored
+      - c3_3_4
+      ensure_changes_to_system_administration_scope_sudoers_is_collected:
+      - 5.2.3.1
+      - Ensure changes to system administration scope (sudoers) is collected
+      - c5_2_3_1
+      ensure_chrony_is_configured:
+      - 2.1.2
+      - Ensure chrony is configured
+      - c2_1_2
+      ensure_chrony_is_not_run_as_the_root_user:
+      - 2.1.3
+      - Ensure chrony is not run as the root user
+      - c2_1_3
+      ensure_core_dump_backtraces_are_disabled:
+      - 1.4.3
+      - Ensure core dump backtraces are disabled
+      - c1_4_3
+      ensure_core_dump_storage_is_disabled:
+      - 1.4.4
+      - Ensure core dump storage is disabled
+      - c1_4_4
+      ensure_cramfs_kernel_module_is_not_available:
+      - 1.1.1.1
+      - Ensure cramfs kernel module is not available
+      - c1_1_1_1
+      ensure_cron_daemon_is_enabled_and_active:
+      - 4.1.1.1
+      - Ensure cron daemon is enabled and active
+      - c4_1_1_1
+      ensure_crontab_is_restricted_to_authorized_users:
+      - 4.1.1.8
+      - Ensure crontab is restricted to authorized users
+      - c4_1_1_8
+      ensure_cryptographic_mechanisms_are_used_to_protect_the_integrity_of_audit_tools:
+      - 5.3.3
+      - Ensure cryptographic mechanisms are used to protect the integrity of audit
+        tools
+      - c5_3_3
+      ensure_dccp_kernel_module_is_not_available:
+      - 3.2.1
+      - Ensure dccp kernel module is not available
+      - c3_2_1
+      ensure_default_group_for_the_root_account_is_gid_0:
+      - 4.5.2.1
+      - Ensure default group for the root account is GID 0
+      - c4_5_2_1
+      ensure_default_user_shell_timeout_is_configured:
+      - 4.5.3.2
+      - Ensure default user shell timeout is configured
+      - c4_5_3_2
+      ensure_default_user_umask_is_configured:
+      - 4.5.3.3
+      - Ensure default user umask is configured
+      - c4_5_3_3
+      ensure_devshm_is_a_separate_partition:
+      - 1.1.2.2.1
+      - Ensure /dev/shm is a separate partition
+      - c1_1_2_2_1
+      ensure_dhcp_server_services_are_not_in_use:
+      - 2.2.3
+      - Ensure dhcp server services are not in use
+      - c2_2_3
+      ensure_discretionary_access_control_permission_modification_events_are_collected:
+      - 5.2.3.9
+      - Ensure discretionary access control permission modification events are collected
+      - c5_2_3_9
+      ensure_dns_server_services_are_not_in_use:
+      - 2.2.4
+      - Ensure dns server services are not in use
+      - c2_2_4
+      ensure_dnsmasq_services_are_not_in_use:
+      - 2.2.5
+      - Ensure dnsmasq services are not in use
+      - c2_2_5
+      ensure_etcshadow_password_fields_are_not_empty:
+      - 6.2.2
+      - Ensure /etc/shadow password fields are not empty
+      - c6_2_2
+      ensure_events_that_modify_date_and_time_information_are_collected:
+      - 5.2.3.4
+      - Ensure events that modify date and time information are collected
+      - c5_2_3_4
+      ensure_events_that_modify_the_sudo_log_file_are_collected:
+      - 5.2.3.3
+      - Ensure events that modify the sudo log file are collected
+      - c5_2_3_3
+      ensure_events_that_modify_the_systems_mandatory_access_controls_are_collected:
+      - 5.2.3.14
+      - Ensure events that modify the system's Mandatory Access Controls are collected
+      - c5_2_3_14
+      ensure_events_that_modify_the_systems_network_environment_are_collected:
+      - 5.2.3.5
+      - Ensure events that modify the system's network environment are collected
+      - c5_2_3_5
+      ensure_events_that_modify_usergroup_information_are_collected:
+      - 5.2.3.8
+      - Ensure events that modify user/group information are collected
+      - c5_2_3_8
+      ensure_file_deletion_events_by_users_are_collected:
+      - 5.2.3.13
+      - Ensure file deletion events by users are collected
+      - c5_2_3_13
+      ensure_filesystem_integrity_is_regularly_checked:
+      - 5.3.2
+      - Ensure filesystem integrity is regularly checked
+      - c5_3_2
+      ensure_firewalld_drops_unnecessary_services_and_ports:
+      - 3.4.2.3
+      - Ensure firewalld drops unnecessary services and ports
+      - c3_4_2_3
+      ensure_freevxfs_kernel_module_is_not_available:
+      - 1.1.1.2
+      - Ensure freevxfs kernel module is not available
+      - c1_1_1_2
+      ensure_ftp_client_is_not_installed:
+      - 2.3.1
+      - Ensure ftp client is not installed
+      - c2_3_1
+      ensure_ftp_server_services_are_not_in_use:
+      - 2.2.7
+      - Ensure ftp server services are not in use
+      - c2_2_7
+      ensure_gdm_automatic_mounting_of_removable_media_is_disabled:
+      - 1.8.6
+      - Ensure GDM automatic mounting of removable media is disabled
+      - c1_8_6
+      ensure_gdm_autorun_never_is_enabled:
+      - 1.8.8
+      - Ensure GDM autorun-never is enabled
+      - c1_8_8
+      ensure_gdm_autorun_never_is_not_overridden:
+      - 1.8.9
+      - Ensure GDM autorun-never is not overridden
+      - c1_8_9
+      ensure_gdm_disable_user_list_option_is_enabled:
+      - 1.8.3
+      - Ensure GDM disable-user-list option is enabled
+      - c1_8_3
+      ensure_gdm_disabling_automatic_mounting_of_removable_media_is_not_overridden:
+      - 1.8.7
+      - Ensure GDM disabling automatic mounting of removable media is not overridden
+      - c1_8_7
+      ensure_gdm_login_banner_is_configured:
+      - 1.8.2
+      - Ensure GDM login banner is configured
+      - c1_8_2
+      ensure_gdm_screen_locks_cannot_be_overridden:
+      - 1.8.5
+      - Ensure GDM screen locks cannot be overridden
+      - c1_8_5
+      ensure_gdm_screen_locks_when_the_user_is_idle:
+      - 1.8.4
+      - Ensure GDM screen locks when the user is idle
+      - c1_8_4
+      ensure_gnome_display_manager_is_removed:
+      - 1.8.1
+      - Ensure GNOME Display Manager is removed
+      - c1_8_1
+      ensure_gpg_keys_are_configured:
+      - 1.2.1
+      - Ensure GPG keys are configured
+      - c1_2_1
+      ensure_gpgcheck_is_globally_activated:
+      - 1.2.2
+      - Ensure gpgcheck is globally activated
+      - c1_2_2
+      ensure_hfs_kernel_module_is_not_available:
+      - 1.1.1.3
+      - Ensure hfs kernel module is not available
+      - c1_1_1_3
+      ensure_hfsplus_kernel_module_is_not_available:
+      - 1.1.1.4
+      - Ensure hfsplus kernel module is not available
+      - c1_1_1_4
+      ensure_host_based_firewall_loopback_traffic_is_configured:
+      - 3.4.2.2
+      - Ensure host based firewall loopback traffic is configured
+      - c3_4_2_2
+      ensure_icmp_redirects_are_not_accepted:
+      - 3.3.5
+      - Ensure icmp redirects are not accepted
+      - c3_3_5
+      ensure_inactive_password_lock_is_30_days_or_less:
+      - 4.5.1.4
+      - Ensure inactive password lock is 30 days or less
+      - c4_5_1_4
+      ensure_ip_forwarding_is_disabled:
+      - 3.3.1
+      - Ensure ip forwarding is disabled
+      - c3_3_1
+      ensure_ipv6_router_advertisements_are_not_accepted:
+      - 3.3.11
+      - Ensure ipv6 router advertisements are not accepted
+      - c3_3_11
+      ensure_ipv6_status_is_identified:
+      - 3.1.1
+      - Ensure IPv6 status is identified
+      - c3_1_1
+      ensure_jffs2_kernel_module_is_not_available:
+      - 1.1.1.5
+      - Ensure jffs2 kernel module is not available
+      - c1_1_1_5
+      ensure_journald_is_configured_to_compress_large_log_files:
+      - 5.1.2.3
+      - Ensure journald is configured to compress large log files
+      - c5_1_2_3
+      ensure_journald_is_configured_to_send_logs_to_rsyslog:
+      - 5.1.1.3
+      - Ensure journald is configured to send logs to rsyslog
+      - c5_1_1_3
+      ensure_journald_is_configured_to_write_logfiles_to_persistent_disk:
+      - 5.1.2.4
+      - Ensure journald is configured to write logfiles to persistent disk
+      - c5_1_2_4
+      ensure_journald_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.2.1.4
+      - Ensure journald is not configured to receive logs from a remote client
+      - c5_1_2_1_4
+      ensure_journald_is_not_configured_to_send_logs_to_rsyslog:
+      - 5.1.2.5
+      - Ensure journald is not configured to send logs to rsyslog
+      - c5_1_2_5
+      ensure_journald_log_rotation_is_configured_per_site_policy:
+      - 5.1.2.6
+      - Ensure journald log rotation is configured per site policy
+      - c5_1_2_6
+      ensure_journald_service_is_enabled:
+      - 5.1.2.2
+      - Ensure journald service is enabled
+      - c5_1_2_2
+      ensure_kernel_module_loading_unloading_and_modification_is_collected:
+      - 5.2.3.19
+      - Ensure kernel module loading unloading and modification is collected
+      - c5_2_3_19
+      ensure_latest_version_of_authselect_is_installed:
+      - 4.4.1.2
+      - Ensure latest version of authselect is installed
+      - c4_4_1_2
+      ensure_latest_version_of_pam_is_installed:
+      - 4.4.1.1
+      - Ensure latest version of pam is installed
+      - c4_4_1_1
+      ensure_ldap_client_is_not_installed:
+      - 2.3.2
+      - Ensure ldap client is not installed
+      - c2_3_2
+      ensure_local_interactive_user_dot_files_access_is_configured:
+      - 6.2.11
+      - Ensure local interactive user dot files access is configured
+      - c6_2_11
+      ensure_local_interactive_user_home_directories_are_configured:
+      - 6.2.10
+      - Ensure local interactive user home directories are configured
+      - c6_2_10
+      ensure_local_login_warning_banner_is_configured_properly:
+      - 1.7.2
+      - Ensure local login warning banner is configured properly
+      - c1_7_2
+      ensure_logging_is_configured:
+      - 5.1.1.5
+      - Ensure logging is configured
+      - c5_1_1_5
+      ensure_login_and_logout_events_are_collected:
+      - 5.2.3.12
+      - Ensure login and logout events are collected
+      - c5_2_3_12
+      ensure_logrotate_is_configured:
+      - 5.1.3
+      - Ensure logrotate is configured
+      - c5_1_3
+      ensure_mail_transfer_agents_are_configured_for_local_only_mode:
+      - 2.2.21
+      - Ensure mail transfer agents are configured for local-only mode
+      - c2_2_21
+      ensure_message_access_server_services_are_not_in_use:
+      - 2.2.8
+      - Ensure message access server services are not in use
+      - c2_2_8
+      ensure_message_of_the_day_is_configured_properly:
+      - 1.7.1
+      - Ensure message of the day is configured properly
+      - c1_7_1
+      ensure_network_file_system_services_are_not_in_use:
+      - 2.2.9
+      - Ensure network file system services are not in use
+      - c2_2_9
+      ensure_nftables_base_chains_exist:
+      - 3.4.2.1
+      - Ensure nftables base chains exist
+      - c3_4_2_1
+      ensure_nftables_default_deny_firewall_policy:
+      - 3.4.2.5
+      - Ensure nftables default deny firewall policy
+      - c3_4_2_5
+      ensure_nftables_established_connections_are_configured:
+      - 3.4.2.4
+      - Ensure nftables established connections are configured
+      - c3_4_2_4
+      ensure_nftables_is_installed:
+      - 3.4.1.1
+      - Ensure nftables is installed
+      - c3_4_1_1
+      ensure_nis_client_is_not_installed:
+      - 2.3.3
+      - Ensure nis client is not installed
+      - c2_3_3
+      ensure_nis_server_services_are_not_in_use:
+      - 2.2.10
+      - Ensure nis server services are not in use
+      - c2_2_10
+      ensure_no_duplicate_gids_exist:
+      - 6.2.5
+      - Ensure no duplicate GIDs exist
+      - c6_2_5
+      ensure_no_duplicate_group_names_exist:
+      - 6.2.7
+      - Ensure no duplicate group names exist
+      - c6_2_7
+      ensure_no_duplicate_uids_exist:
+      - 6.2.4
+      - Ensure no duplicate UIDs exist
+      - c6_2_4
+      ensure_no_duplicate_user_names_exist:
+      - 6.2.6
+      - Ensure no duplicate user names exist
+      - c6_2_6
+      ensure_no_unconfined_services_exist:
+      - 1.5.1.6
+      - Ensure no unconfined services exist
+      - c1_5_1_6
+      ensure_no_unowned_or_ungrouped_files_or_directories_exist:
+      - 6.1.12
+      - Ensure no unowned or ungrouped files or directories exist
+      - c6_1_12
+      ensure_nodev_option_set_on_devshm_partition:
+      - 1.1.2.2.2
+      - Ensure nodev option set on /dev/shm partition
+      - c1_1_2_2_2
+      ensure_nodev_option_set_on_home_partition:
+      - 1.1.2.3.2
+      - Ensure nodev option set on /home partition
+      - c1_1_2_3_2
+      ensure_nodev_option_set_on_tmp_partition:
+      - 1.1.2.1.2
+      - Ensure nodev option set on /tmp partition
+      - c1_1_2_1_2
+      ensure_nodev_option_set_on_var_partition:
+      - 1.1.2.4.2
+      - Ensure nodev option set on /var partition
+      - c1_1_2_4_2
+      ensure_nodev_option_set_on_varlog_partition:
+      - 1.1.2.6.2
+      - Ensure nodev option set on /var/log partition
+      - c1_1_2_6_2
+      ensure_nodev_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.2
+      - Ensure nodev option set on /var/log/audit partition
+      - c1_1_2_7_2
+      ensure_nodev_option_set_on_vartmp_partition:
+      - 1.1.2.5.2
+      - Ensure nodev option set on /var/tmp partition
+      - c1_1_2_5_2
+      ensure_noexec_option_set_on_devshm_partition:
+      - 1.1.2.2.4
+      - Ensure noexec option set on /dev/shm partition
+      - c1_1_2_2_4
+      ensure_noexec_option_set_on_tmp_partition:
+      - 1.1.2.1.4
+      - Ensure noexec option set on /tmp partition
+      - c1_1_2_1_4
+      ensure_noexec_option_set_on_varlog_partition:
+      - 1.1.2.6.4
+      - Ensure noexec option set on /var/log partition
+      - c1_1_2_6_4
+      ensure_noexec_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.4
+      - Ensure noexec option set on /var/log/audit partition
+      - c1_1_2_7_4
+      ensure_noexec_option_set_on_vartmp_partition:
+      - 1.1.2.5.4
+      - Ensure noexec option set on /var/tmp partition
+      - c1_1_2_5_4
+      ensure_nologin_is_not_listed_in_etcshells:
+      - 4.5.3.1
+      - Ensure nologin is not listed in /etc/shells
+      - c4_5_3_1
+      ensure_nosuid_option_set_on_devshm_partition:
+      - 1.1.2.2.3
+      - Ensure nosuid option set on /dev/shm partition
+      - c1_1_2_2_3
+      ensure_nosuid_option_set_on_home_partition:
+      - 1.1.2.3.3
+      - Ensure nosuid option set on /home partition
+      - c1_1_2_3_3
+      ensure_nosuid_option_set_on_tmp_partition:
+      - 1.1.2.1.3
+      - Ensure nosuid option set on /tmp partition
+      - c1_1_2_1_3
+      ensure_nosuid_option_set_on_var_partition:
+      - 1.1.2.4.3
+      - Ensure nosuid option set on /var partition
+      - c1_1_2_4_3
+      ensure_nosuid_option_set_on_varlog_partition:
+      - 1.1.2.6.3
+      - Ensure nosuid option set on /var/log partition
+      - c1_1_2_6_3
+      ensure_nosuid_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.3
+      - Ensure nosuid option set on /var/log/audit partition
+      - c1_1_2_7_3
+      ensure_nosuid_option_set_on_vartmp_partition:
+      - 1.1.2.5.3
+      - Ensure nosuid option set on /var/tmp partition
+      - c1_1_2_5_3
+      ensure_only_approved_services_are_listening_on_a_network_interface:
+      - 2.2.22
+      - Ensure only approved services are listening on a network interface
+      - c2_2_22
+      ensure_only_authorized_groups_are_assigned_ownership_of_audit_log_files:
+      - 5.2.4.4
+      - Ensure only authorized groups are assigned ownership of audit log files
+      - c5_2_4_4
+      ensure_only_authorized_users_own_audit_log_files:
+      - 5.2.4.3
+      - Ensure only authorized users own audit log files
+      - c5_2_4_3
+      ensure_package_manager_repositories_are_configured:
+      - 1.2.4
+      - Ensure package manager repositories are configured
+      - c1_2_4
+      ensure_packet_redirect_sending_is_disabled:
+      - 3.3.2
+      - Ensure packet redirect sending is disabled
+      - c3_3_2
+      ensure_pam_faillock_module_is_enabled:
+      - 4.4.2.2
+      - Ensure pam_faillock module is enabled
+      - c4_4_2_2
+      ensure_pam_pwhistory_includes_use_authtok:
+      - 4.4.3.3.3
+      - Ensure pam_pwhistory includes use_authtok
+      - c4_4_3_3_3
+      ensure_pam_pwhistory_module_is_enabled:
+      - 4.4.2.4
+      - Ensure pam_pwhistory module is enabled
+      - c4_4_2_4
+      ensure_pam_pwquality_module_is_enabled:
+      - 4.4.2.3
+      - Ensure pam_pwquality module is enabled
+      - c4_4_2_3
+      ensure_pam_unix_does_not_include_nullok:
+      - 4.4.3.4.1
+      - Ensure pam_unix does not include nullok
+      - c4_4_3_4_1
+      ensure_pam_unix_does_not_include_remember:
+      - 4.4.3.4.2
+      - Ensure pam_unix does not include remember
+      - c4_4_3_4_2
+      ensure_pam_unix_includes_a_strong_password_hashing_algorithm:
+      - 4.4.3.4.3
+      - Ensure pam_unix includes a strong password hashing algorithm
+      - c4_4_3_4_3
+      ensure_pam_unix_includes_use_authtok:
+      - 4.4.3.4.4
+      - Ensure pam_unix includes use_authtok
+      - c4_4_3_4_4
+      ensure_pam_unix_module_is_enabled:
+      - 4.4.2.5
+      - Ensure pam_unix module is enabled
+      - c4_4_2_5
+      ensure_password_complexity_is_configured:
+      - 4.4.3.2.3
+      - Ensure password complexity is configured
+      - c4_4_3_2_3
+      ensure_password_dictionary_check_is_enabled:
+      - 4.4.3.2.6
+      - Ensure password dictionary check is enabled
+      - c4_4_3_2_6
+      ensure_password_expiration_is_365_days_or_less:
+      - 4.5.1.2
+      - Ensure password expiration is 365 days or less
+      - c4_5_1_2
+      ensure_password_expiration_warning_days_is_7_or_more:
+      - 4.5.1.3
+      - Ensure password expiration warning days is 7 or more
+      - c4_5_1_3
+      ensure_password_failed_attempts_lockout_includes_root_account:
+      - 4.4.3.1.3
+      - Ensure password failed attempts lockout includes root account
+      - c4_4_3_1_3
+      ensure_password_failed_attempts_lockout_is_configured:
+      - 4.4.3.1.1
+      - Ensure password failed attempts lockout is configured
+      - c4_4_3_1_1
+      ensure_password_history_is_enforced_for_the_root_user:
+      - 4.4.3.3.2
+      - Ensure password history is enforced for the root user
+      - c4_4_3_3_2
+      ensure_password_history_remember_is_configured:
+      - 4.4.3.3.1
+      - Ensure password history remember is configured
+      - c4_4_3_3_1
+      ensure_password_length_is_configured:
+      - 4.4.3.2.2
+      - Ensure password length is configured
+      - c4_4_3_2_2
+      ensure_password_maximum_sequential_characters_is_configured:
+      - 4.4.3.2.5
+      - Ensure password maximum sequential characters is configured
+      - c4_4_3_2_5
+      ensure_password_number_of_changed_characters_is_configured:
+      - 4.4.3.2.1
+      - Ensure password number of changed characters is configured
+      - c4_4_3_2_1
+      ensure_password_quality_is_enforced_for_the_root_user:
+      - 4.4.3.2.7
+      - Ensure password quality is enforced for the root user
+      - c4_4_3_2_7
+      ensure_password_same_consecutive_characters_is_configured:
+      - 4.4.3.2.4
+      - Ensure password same consecutive characters is configured
+      - c4_4_3_2_4
+      ensure_password_unlock_time_is_configured:
+      - 4.4.3.1.2
+      - Ensure password unlock time is configured
+      - c4_4_3_1_2
+      ensure_permissions_on_bootloader_config_are_configured:
+      - 1.3.2
+      - Ensure permissions on bootloader config are configured
+      - c1_3_2
+      ensure_permissions_on_etccron_d_are_configured:
+      - 4.1.1.7
+      - Ensure permissions on /etc/cron.d are configured
+      - c4_1_1_7
+      ensure_permissions_on_etccron_daily_are_configured:
+      - 4.1.1.4
+      - Ensure permissions on /etc/cron.daily are configured
+      - c4_1_1_4
+      ensure_permissions_on_etccron_hourly_are_configured:
+      - 4.1.1.3
+      - Ensure permissions on /etc/cron.hourly are configured
+      - c4_1_1_3
+      ensure_permissions_on_etccron_monthly_are_configured:
+      - 4.1.1.6
+      - Ensure permissions on /etc/cron.monthly are configured
+      - c4_1_1_6
+      ensure_permissions_on_etccron_weekly_are_configured:
+      - 4.1.1.5
+      - Ensure permissions on /etc/cron.weekly are configured
+      - c4_1_1_5
+      ensure_permissions_on_etccrontab_are_configured:
+      - 4.1.1.2
+      - Ensure permissions on /etc/crontab are configured
+      - c4_1_1_2
+      ensure_permissions_on_etcgroup__are_configured:
+      - 6.1.5
+      - Ensure permissions on /etc/group- are configured
+      - c6_1_5
+      ensure_permissions_on_etcgroup_are_configured:
+      - 6.1.4
+      - Ensure permissions on /etc/group are configured
+      - c6_1_4
+      ensure_permissions_on_etcgshadow__are_configured:
+      - 6.1.9
+      - Ensure permissions on /etc/gshadow- are configured
+      - c6_1_9
+      ensure_permissions_on_etcgshadow_are_configured:
+      - 6.1.8
+      - Ensure permissions on /etc/gshadow are configured
+      - c6_1_8
+      ensure_permissions_on_etcopasswd_are_configured:
+      - 6.1.3
+      - Ensure permissions on /etc/opasswd are configured
+      - c6_1_3
+      ensure_permissions_on_etcpasswd__are_configured:
+      - 6.1.2
+      - Ensure permissions on /etc/passwd- are configured
+      - c6_1_2
+      ensure_permissions_on_etcpasswd_are_configured:
+      - 6.1.1
+      - Ensure permissions on /etc/passwd are configured
+      - c6_1_1
+      ensure_permissions_on_etcshadow__are_configured:
+      - 6.1.7
+      - Ensure permissions on /etc/shadow- are configured
+      - c6_1_7
+      ensure_permissions_on_etcshadow_are_configured:
+      - 6.1.6
+      - Ensure permissions on /etc/shadow are configured
+      - c6_1_6
+      ensure_permissions_on_etcshells_are_configured:
+      - 6.1.10
+      - Ensure permissions on /etc/shells are configured
+      - c6_1_10
+      ensure_permissions_on_etcsshsshd_config_are_configured:
+      - 4.2.1
+      - Ensure permissions on /etc/ssh/sshd_config are configured
+      - c4_2_1
+      ensure_permissions_on_ssh_private_host_key_files_are_configured:
+      - 4.2.2
+      - Ensure permissions on SSH private host key files are configured
+      - c4_2_2
+      ensure_permissions_on_ssh_public_host_key_files_are_configured:
+      - 4.2.3
+      - Ensure permissions on SSH public host key files are configured
+      - c4_2_3
+      ensure_print_server_services_are_not_in_use:
+      - 2.2.11
+      - Ensure print server services are not in use
+      - c2_2_11
+      ensure_ptrace_scope_is_restricted:
+      - 1.4.2
+      - Ensure ptrace_scope is restricted
+      - c1_4_2
+      ensure_rds_kernel_module_is_not_available:
+      - 3.2.3
+      - Ensure rds kernel module is not available
+      - c3_2_3
+      ensure_re_authentication_for_privilege_escalation_is_not_disabled_globally:
+      - 4.3.5
+      - Ensure re-authentication for privilege escalation is not disabled globally
+      - c4_3_5
+      ensure_remote_login_warning_banner_is_configured_properly:
+      - 1.7.3
+      - Ensure remote login warning banner is configured properly
+      - c1_7_3
+      ensure_repo_gpgcheck_is_globally_activated:
+      - 1.2.3
+      - Ensure repo_gpgcheck is globally activated
+      - c1_2_3
+      ensure_reverse_path_filtering_is_enabled:
+      - 3.3.7
+      - Ensure reverse path filtering is enabled
+      - c3_3_7
+      ensure_root_is_the_only_uid_0_account:
+      - 6.2.9
+      - Ensure root is the only UID 0 account
+      - c6_2_9
+      ensure_root_password_is_set:
+      - 4.5.2.4
+      - Ensure root password is set
+      - c4_5_2_4
+      ensure_root_path_integrity:
+      - 6.2.8
+      - Ensure root path integrity
+      - c6_2_8
+      ensure_root_user_umask_is_configured:
+      - 4.5.2.2
+      - Ensure root user umask is configured
+      - c4_5_2_2
+      ensure_rpcbind_services_are_not_in_use:
+      - 2.2.12
+      - Ensure rpcbind services are not in use
+      - c2_2_12
+      ensure_rsync_services_are_not_in_use:
+      - 2.2.13
+      - Ensure rsync services are not in use
+      - c2_2_13
+      ensure_rsyslog_default_file_permissions_are_configured:
+      - 5.1.1.4
+      - Ensure rsyslog default file permissions are configured
+      - c5_1_1_4
+      ensure_rsyslog_is_configured_to_send_logs_to_a_remote_log_host:
+      - 5.1.1.6
+      - Ensure rsyslog is configured to send logs to a remote log host
+      - c5_1_1_6
+      ensure_rsyslog_is_installed:
+      - 5.1.1.1
+      - Ensure rsyslog is installed
+      - c5_1_1_1
+      ensure_rsyslog_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.1.7
+      - Ensure rsyslog is not configured to receive logs from a remote client
+      - c5_1_1_7
+      ensure_rsyslog_service_is_enabled:
+      - 5.1.1.2
+      - Ensure rsyslog service is enabled
+      - c5_1_1_2
+      ensure_samba_file_server_services_are_not_in_use:
+      - 2.2.6
+      - Ensure samba file server services are not in use
+      - c2_2_6
+      ensure_sctp_kernel_module_is_not_available:
+      - 3.2.4
+      - Ensure sctp kernel module is not available
+      - c3_2_4
+      ensure_secure_icmp_redirects_are_not_accepted:
+      - 3.3.6
+      - Ensure secure icmp redirects are not accepted
+      - c3_3_6
+      ensure_selinux_is_installed:
+      - 1.5.1.1
+      - Ensure SELinux is installed
+      - c1_5_1_1
+      ensure_selinux_is_not_disabled_in_bootloader_configuration:
+      - 1.5.1.2
+      - Ensure SELinux is not disabled in bootloader configuration
+      - c1_5_1_2
+      ensure_selinux_policy_is_configured:
+      - 1.5.1.3
+      - Ensure SELinux policy is configured
+      - c1_5_1_3
+      ensure_separate_partition_exists_for_home:
+      - 1.1.2.3.1
+      - Ensure separate partition exists for /home
+      - c1_1_2_3_1
+      ensure_separate_partition_exists_for_var:
+      - 1.1.2.4.1
+      - Ensure separate partition exists for /var
+      - c1_1_2_4_1
+      ensure_separate_partition_exists_for_varlog:
+      - 1.1.2.6.1
+      - Ensure separate partition exists for /var/log
+      - c1_1_2_6_1
+      ensure_separate_partition_exists_for_varlogaudit:
+      - 1.1.2.7.1
+      - Ensure separate partition exists for /var/log/audit
+      - c1_1_2_7_1
+      ensure_separate_partition_exists_for_vartmp:
+      - 1.1.2.5.1
+      - Ensure separate partition exists for /var/tmp
+      - c1_1_2_5_1
+      ensure_session_initiation_information_is_collected:
+      - 5.2.3.11
+      - Ensure session initiation information is collected
+      - c5_2_3_11
+      ensure_setroubleshoot_is_not_installed:
+      - 1.5.1.8
+      - Ensure SETroubleshoot is not installed
+      - c1_5_1_8
+      ensure_snmp_services_are_not_in_use:
+      - 2.2.14
+      - Ensure snmp services are not in use
+      - c2_2_14
+      ensure_source_routed_packets_are_not_accepted:
+      - 3.3.8
+      - Ensure source routed packets are not accepted
+      - c3_3_8
+      ensure_squashfs_kernel_module_is_not_available:
+      - 1.1.1.6
+      - Ensure squashfs kernel module is not available
+      - c1_1_1_6
+      ensure_sshd_access_is_configured:
+      - 4.2.4
+      - Ensure sshd access is configured
+      - c4_2_4
+      ensure_sshd_banner_is_configured:
+      - 4.2.5
+      - Ensure sshd Banner is configured
+      - c4_2_5
+      ensure_sshd_ciphers_are_configured:
+      - 4.2.6
+      - Ensure sshd Ciphers are configured
+      - c4_2_6
+      ensure_sshd_clientaliveinterval_and_clientalivecountmax_are_configured:
+      - 4.2.7
+      - Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+      - c4_2_7
+      ensure_sshd_crypto_policy_is_not_set:
+      - 4.2.22
+      - Ensure sshd crypto_policy is not set
+      - c4_2_22
+      ensure_sshd_disableforwarding_is_enabled:
+      - 4.2.8
+      - Ensure sshd DisableForwarding is enabled
+      - c4_2_8
+      ensure_sshd_hostbasedauthentication_is_disabled:
+      - 4.2.9
+      - Ensure sshd HostbasedAuthentication is disabled
+      - c4_2_9
+      ensure_sshd_ignorerhosts_is_enabled:
+      - 4.2.10
+      - Ensure sshd IgnoreRhosts is enabled
+      - c4_2_10
+      ensure_sshd_kexalgorithms_is_configured:
+      - 4.2.11
+      - Ensure sshd KexAlgorithms is configured
+      - c4_2_11
+      ensure_sshd_logingracetime_is_configured:
+      - 4.2.12
+      - Ensure sshd LoginGraceTime is configured
+      - c4_2_12
+      ensure_sshd_loglevel_is_configured:
+      - 4.2.13
+      - Ensure sshd LogLevel is configured
+      - c4_2_13
+      ensure_sshd_macs_are_configured:
+      - 4.2.14
+      - Ensure sshd MACs are configured
+      - c4_2_14
+      ensure_sshd_maxauthtries_is_configured:
+      - 4.2.15
+      - Ensure sshd MaxAuthTries is configured
+      - c4_2_15
+      ensure_sshd_maxsessions_is_configured:
+      - 4.2.16
+      - Ensure sshd MaxSessions is configured
+      - c4_2_16
+      ensure_sshd_maxstartups_is_configured:
+      - 4.2.17
+      - Ensure sshd MaxStartups is configured
+      - c4_2_17
+      ensure_sshd_permitemptypasswords_is_disabled:
+      - 4.2.18
+      - Ensure sshd PermitEmptyPasswords is disabled
+      - c4_2_18
+      ensure_sshd_permitrootlogin_is_disabled:
+      - 4.2.19
+      - Ensure sshd PermitRootLogin is disabled
+      - c4_2_19
+      ensure_sshd_permituserenvironment_is_disabled:
+      - 4.2.20
+      - Ensure sshd PermitUserEnvironment is disabled
+      - c4_2_20
+      ensure_sshd_usepam_is_enabled:
+      - 4.2.21
+      - Ensure sshd UsePAM is enabled
+      - c4_2_21
+      ensure_strong_password_hashing_algorithm_is_configured:
+      - 4.5.1.1
+      - Ensure strong password hashing algorithm is configured
+      - c4_5_1_1
+      ensure_successful_and_unsuccessful_attempts_to_use_the_chacl_command_are_recorded:
+      - 5.2.3.17
+      - Ensure successful and unsuccessful attempts to use the chacl command are recorded
+      - c5_2_3_17
+      ensure_successful_and_unsuccessful_attempts_to_use_the_chcon_command_are_recorded:
+      - 5.2.3.15
+      - Ensure successful and unsuccessful attempts to use the chcon command are recorded
+      - c5_2_3_15
+      ensure_successful_and_unsuccessful_attempts_to_use_the_setfacl_command_are_recorded:
+      - 5.2.3.16
+      - Ensure successful and unsuccessful attempts to use the setfacl command are
+        recorded
+      - c5_2_3_16
+      ensure_successful_and_unsuccessful_attempts_to_use_the_usermod_command_are_recorded:
+      - 5.2.3.18
+      - Ensure successful and unsuccessful attempts to use the usermod command are
+        recorded
+      - c5_2_3_18
+      ensure_successful_file_system_mounts_are_collected:
+      - 5.2.3.10
+      - Ensure successful file system mounts are collected
+      - c5_2_3_10
+      ensure_sudo_authentication_timeout_is_configured_correctly:
+      - 4.3.6
+      - Ensure sudo authentication timeout is configured correctly
+      - c4_3_6
+      ensure_sudo_commands_use_pty:
+      - 4.3.2
+      - Ensure sudo commands use pty
+      - c4_3_2
+      ensure_sudo_is_installed:
+      - 4.3.1
+      - Ensure sudo is installed
+      - c4_3_1
+      ensure_sudo_log_file_exists:
+      - 4.3.3
+      - Ensure sudo log file exists
+      - c4_3_3
+      ensure_suid_and_sgid_files_are_reviewed:
+      - 6.1.13
+      - Ensure SUID and SGID files are reviewed
+      - c6_1_13
+      ensure_suspicious_packets_are_logged:
+      - 3.3.9
+      - Ensure suspicious packets are logged
+      - c3_3_9
+      ensure_system_accounts_are_secured:
+      - 4.5.2.3
+      - Ensure system accounts are secured
+      - c4_5_2_3
+      ensure_system_is_disabled_when_audit_logs_are_full:
+      - 5.2.2.3
+      - Ensure system is disabled when audit logs are full
+      - c5_2_2_3
+      ensure_system_warns_when_audit_logs_are_low_on_space:
+      - 5.2.2.4
+      - Ensure system warns when audit logs are low on space
+      - c5_2_2_4
+      ensure_system_wide_crypto_policy_disables_cbc_for_ssh:
+      - 1.6.3
+      - Ensure system wide crypto policy disables cbc for ssh
+      - c1_6_3
+      ensure_system_wide_crypto_policy_disables_macs_less_than_128_bits:
+      - 1.6.4
+      - Ensure system wide crypto policy disables macs less than 128 bits
+      - c1_6_4
+      ensure_system_wide_crypto_policy_disables_sha1_hash_and_signature_support:
+      - 1.6.2
+      - Ensure system wide crypto policy disables sha1 hash and signature support
+      - c1_6_2
+      ensure_system_wide_crypto_policy_is_not_set_to_legacy:
+      - 1.6.1
+      - Ensure system wide crypto policy is not set to legacy
+      - c1_6_1
+      ensure_systemd_journal_remote_is_configured:
+      - 5.1.2.1.2
+      - Ensure systemd-journal-remote is configured
+      - c5_1_2_1_2
+      ensure_systemd_journal_remote_is_enabled:
+      - 5.1.2.1.3
+      - Ensure systemd-journal-remote is enabled
+      - c5_1_2_1_3
+      ensure_systemd_journal_remote_is_installed:
+      - 5.1.2.1.1
+      - Ensure systemd-journal-remote is installed
+      - c5_1_2_1_1
+      ensure_tcp_syn_cookies_is_enabled:
+      - 3.3.10
+      - Ensure tcp syn cookies is enabled
+      - c3_3_10
+      ensure_telnet_client_is_not_installed:
+      - 2.3.4
+      - Ensure telnet client is not installed
+      - c2_3_4
+      ensure_telnet_server_services_are_not_in_use:
+      - 2.2.15
+      - Ensure telnet server services are not in use
+      - c2_2_15
+      ensure_tftp_client_is_not_installed:
+      - 2.3.5
+      - Ensure tftp client is not installed
+      - c2_3_5
+      ensure_tftp_server_services_are_not_in_use:
+      - 2.2.16
+      - Ensure tftp server services are not in use
+      - c2_2_16
+      ensure_the_audit_configuration_is_immutable:
+      - 5.2.3.20
+      - Ensure the audit configuration is immutable
+      - c5_2_3_20
+      ensure_the_audit_log_directory_is_0750_or_more_restrictive:
+      - 5.2.4.1
+      - Ensure the audit log directory is 0750 or more restrictive
+      - c5_2_4_1
+      ensure_the_mcs_translation_service_mcstrans_is_not_installed:
+      - 1.5.1.7
+      - Ensure the MCS Translation Service (mcstrans) is not installed
+      - c1_5_1_7
+      ensure_the_running_and_on_disk_configuration_is_the_same:
+      - 5.2.3.21
+      - Ensure the running and on disk configuration is the same
+      - c5_2_3_21
+      ensure_the_selinux_mode_is_enforcing:
+      - 1.5.1.5
+      - Ensure the SELinux mode is enforcing
+      - c1_5_1_5
+      ensure_the_selinux_mode_is_not_disabled:
+      - 1.5.1.4
+      - Ensure the SELinux mode is not disabled
+      - c1_5_1_4
+      ensure_time_synchronization_is_in_use:
+      - 2.1.1
+      - Ensure time synchronization is in use
+      - c2_1_1
+      ensure_tipc_kernel_module_is_not_available:
+      - 3.2.2
+      - Ensure tipc kernel module is not available
+      - c3_2_2
+      ensure_tmp_is_a_separate_partition:
+      - 1.1.2.1.1
+      - Ensure /tmp is a separate partition
+      - c1_1_2_1_1
+      ensure_udf_kernel_module_is_not_available:
+      - 1.1.1.7
+      - Ensure udf kernel module is not available
+      - c1_1_1_7
+      ensure_unsuccessful_file_access_attempts_are_collected:
+      - 5.2.3.7
+      - Ensure unsuccessful file access attempts are collected
+      - c5_2_3_7
+      ensure_updates_patches_and_additional_security_software_are_installed:
+      - 1.2.5
+      - Ensure updates, patches, and additional security software are installed
+      - c1_2_5
+      ensure_usb_storage_kernel_module_is_not_available:
+      - 1.1.1.8
+      - Ensure usb-storage kernel module is not available
+      - c1_1_1_8
+      ensure_use_of_privileged_commands_are_collected:
+      - 5.2.3.6
+      - Ensure use of privileged commands are collected
+      - c5_2_3_6
+      ensure_users_must_provide_password_for_escalation:
+      - 4.3.4
+      - Ensure users must provide password for escalation
+      - c4_3_4
+      ensure_web_proxy_server_services_are_not_in_use:
+      - 2.2.17
+      - Ensure web proxy server services are not in use
+      - c2_2_17
+      ensure_web_server_services_are_not_in_use:
+      - 2.2.18
+      - Ensure web server services are not in use
+      - c2_2_18
+      ensure_wireless_interfaces_are_disabled:
+      - 3.1.2
+      - Ensure wireless interfaces are disabled
+      - c3_1_2
+      ensure_world_writable_files_and_directories_are_secured:
+      - 6.1.11
+      - Ensure world writable files and directories are secured
+      - c6_1_11
+      ensure_x_window_server_services_are_not_in_use:
+      - 2.2.20
+      - Ensure X window server services are not in use
+      - c2_2_20
+      ensure_xdmcp_is_not_enabled:
+      - 1.8.10
+      - Ensure XDMCP is not enabled
+      - c1_8_10
+      ensure_xinetd_services_are_not_in_use:
+      - 2.2.19
+      - Ensure xinetd services are not in use
+      - c2_2_19
+    workstation:
+      audit_system_file_permissions:
+      - 6.1.14
+      - Audit system file permissions
+      - c6_1_14
+      ensure_a_single_firewall_configuration_utility_is_in_use:
+      - 3.4.1.2
+      - Ensure a single firewall configuration utility is in use
+      - c3_4_1_2
+      ensure_access_to_etcissue_is_configured:
+      - 1.7.5
+      - Ensure access to /etc/issue is configured
+      - c1_7_5
+      ensure_access_to_etcissue_net_is_configured:
+      - 1.7.6
+      - Ensure access to /etc/issue.net is configured
+      - c1_7_6
+      ensure_access_to_etcmotd_is_configured:
+      - 1.7.4
+      - Ensure access to /etc/motd is configured
+      - c1_7_4
+      ensure_access_to_the_su_command_is_restricted:
+      - 4.3.7
+      - Ensure access to the su command is restricted
+      - c4_3_7
+      ensure_accounts_in_etcpasswd_use_shadowed_passwords:
+      - 6.2.1
+      - Ensure accounts in /etc/passwd use shadowed passwords
+      - c6_2_1
+      ensure_actions_as_another_user_are_always_logged:
+      - 5.2.3.2
+      - Ensure actions as another user are always logged
+      - c5_2_3_2
+      ensure_active_authselect_profile_includes_pam_modules:
+      - 4.4.2.1
+      - Ensure active authselect profile includes pam modules
+      - c4_4_2_1
+      ensure_address_space_layout_randomization_aslr_is_enabled:
+      - 1.4.1
+      - Ensure address space layout randomization (ASLR) is enabled
+      - c1_4_1
+      ensure_aide_is_installed:
+      - 5.3.1
+      - Ensure AIDE is installed
+      - c5_3_1
+      ensure_all_groups_in_etcpasswd_exist_in_etcgroup:
+      - 6.2.3
+      - Ensure all groups in /etc/passwd exist in /etc/group
+      - c6_2_3
+      ensure_all_logfiles_have_appropriate_access_configured:
+      - 5.1.4
+      - Ensure all logfiles have appropriate access configured
+      - c5_1_4
+      ensure_all_users_last_password_change_date_is_in_the_past:
+      - 4.5.1.5
+      - Ensure all users last password change date is in the past
+      - c4_5_1_5
+      ensure_at_is_restricted_to_authorized_users:
+      - 4.1.2.1
+      - Ensure at is restricted to authorized users
+      - c4_1_2_1
+      ensure_audit_backlog_limit_is_sufficient:
+      - 5.2.1.3
+      - Ensure audit_backlog_limit is sufficient
+      - c5_2_1_3
+      ensure_audit_configuration_files_are_640_or_more_restrictive:
+      - 5.2.4.5
+      - Ensure audit configuration files are 640 or more restrictive
+      - c5_2_4_5
+      ensure_audit_configuration_files_are_owned_by_root:
+      - 5.2.4.6
+      - Ensure audit configuration files are owned by root
+      - c5_2_4_6
+      ensure_audit_configuration_files_belong_to_group_root:
+      - 5.2.4.7
+      - Ensure audit configuration files belong to group root
+      - c5_2_4_7
+      ensure_audit_is_installed:
+      - 5.2.1.1
+      - Ensure audit is installed
+      - c5_2_1_1
+      ensure_audit_log_files_are_mode_0640_or_less_permissive:
+      - 5.2.4.2
+      - Ensure audit log files are mode 0640 or less permissive
+      - c5_2_4_2
+      ensure_audit_log_storage_size_is_configured:
+      - 5.2.2.1
+      - Ensure audit log storage size is configured
+      - c5_2_2_1
+      ensure_audit_logs_are_not_automatically_deleted:
+      - 5.2.2.2
+      - Ensure audit logs are not automatically deleted
+      - c5_2_2_2
+      ensure_audit_tools_are_755_or_more_restrictive:
+      - 5.2.4.8
+      - Ensure audit tools are 755 or more restrictive
+      - c5_2_4_8
+      ensure_audit_tools_are_owned_by_root:
+      - 5.2.4.9
+      - Ensure audit tools are owned by root
+      - c5_2_4_9
+      ensure_audit_tools_belong_to_group_root:
+      - 5.2.4.10
+      - Ensure audit tools belong to group root
+      - c5_2_4_10
+      ensure_auditd_service_is_enabled:
+      - 5.2.1.4
+      - Ensure auditd service is enabled
+      - c5_2_1_4
+      ensure_auditing_for_processes_that_start_prior_to_auditd_is_enabled:
+      - 5.2.1.2
+      - Ensure auditing for processes that start prior to auditd is enabled
+      - c5_2_1_2
+      ensure_autofs_services_are_not_in_use:
+      - 2.2.1
+      - Ensure autofs services are not in use
+      - c2_2_1
+      ensure_avahi_daemon_services_are_not_in_use:
+      - 2.2.2
+      - Ensure avahi daemon services are not in use
+      - c2_2_2
+      ensure_bluetooth_services_are_not_in_use:
+      - 3.1.3
+      - Ensure bluetooth services are not in use
+      - c3_1_3
+      ensure_bogus_icmp_responses_are_ignored:
+      - 3.3.3
+      - Ensure bogus icmp responses are ignored
+      - c3_3_3
+      ensure_bootloader_password_is_set:
+      - 1.3.1
+      - Ensure bootloader password is set
+      - c1_3_1
+      ensure_broadcast_icmp_requests_are_ignored:
+      - 3.3.4
+      - Ensure broadcast icmp requests are ignored
+      - c3_3_4
+      ensure_changes_to_system_administration_scope_sudoers_is_collected:
+      - 5.2.3.1
+      - Ensure changes to system administration scope (sudoers) is collected
+      - c5_2_3_1
+      ensure_chrony_is_configured:
+      - 2.1.2
+      - Ensure chrony is configured
+      - c2_1_2
+      ensure_chrony_is_not_run_as_the_root_user:
+      - 2.1.3
+      - Ensure chrony is not run as the root user
+      - c2_1_3
+      ensure_core_dump_backtraces_are_disabled:
+      - 1.4.3
+      - Ensure core dump backtraces are disabled
+      - c1_4_3
+      ensure_core_dump_storage_is_disabled:
+      - 1.4.4
+      - Ensure core dump storage is disabled
+      - c1_4_4
+      ensure_cramfs_kernel_module_is_not_available:
+      - 1.1.1.1
+      - Ensure cramfs kernel module is not available
+      - c1_1_1_1
+      ensure_cron_daemon_is_enabled_and_active:
+      - 4.1.1.1
+      - Ensure cron daemon is enabled and active
+      - c4_1_1_1
+      ensure_crontab_is_restricted_to_authorized_users:
+      - 4.1.1.8
+      - Ensure crontab is restricted to authorized users
+      - c4_1_1_8
+      ensure_cryptographic_mechanisms_are_used_to_protect_the_integrity_of_audit_tools:
+      - 5.3.3
+      - Ensure cryptographic mechanisms are used to protect the integrity of audit
+        tools
+      - c5_3_3
+      ensure_dccp_kernel_module_is_not_available:
+      - 3.2.1
+      - Ensure dccp kernel module is not available
+      - c3_2_1
+      ensure_default_group_for_the_root_account_is_gid_0:
+      - 4.5.2.1
+      - Ensure default group for the root account is GID 0
+      - c4_5_2_1
+      ensure_default_user_shell_timeout_is_configured:
+      - 4.5.3.2
+      - Ensure default user shell timeout is configured
+      - c4_5_3_2
+      ensure_default_user_umask_is_configured:
+      - 4.5.3.3
+      - Ensure default user umask is configured
+      - c4_5_3_3
+      ensure_devshm_is_a_separate_partition:
+      - 1.1.2.2.1
+      - Ensure /dev/shm is a separate partition
+      - c1_1_2_2_1
+      ensure_dhcp_server_services_are_not_in_use:
+      - 2.2.3
+      - Ensure dhcp server services are not in use
+      - c2_2_3
+      ensure_discretionary_access_control_permission_modification_events_are_collected:
+      - 5.2.3.9
+      - Ensure discretionary access control permission modification events are collected
+      - c5_2_3_9
+      ensure_dns_server_services_are_not_in_use:
+      - 2.2.4
+      - Ensure dns server services are not in use
+      - c2_2_4
+      ensure_dnsmasq_services_are_not_in_use:
+      - 2.2.5
+      - Ensure dnsmasq services are not in use
+      - c2_2_5
+      ensure_etcshadow_password_fields_are_not_empty:
+      - 6.2.2
+      - Ensure /etc/shadow password fields are not empty
+      - c6_2_2
+      ensure_events_that_modify_date_and_time_information_are_collected:
+      - 5.2.3.4
+      - Ensure events that modify date and time information are collected
+      - c5_2_3_4
+      ensure_events_that_modify_the_sudo_log_file_are_collected:
+      - 5.2.3.3
+      - Ensure events that modify the sudo log file are collected
+      - c5_2_3_3
+      ensure_events_that_modify_the_systems_mandatory_access_controls_are_collected:
+      - 5.2.3.14
+      - Ensure events that modify the system's Mandatory Access Controls are collected
+      - c5_2_3_14
+      ensure_events_that_modify_the_systems_network_environment_are_collected:
+      - 5.2.3.5
+      - Ensure events that modify the system's network environment are collected
+      - c5_2_3_5
+      ensure_events_that_modify_usergroup_information_are_collected:
+      - 5.2.3.8
+      - Ensure events that modify user/group information are collected
+      - c5_2_3_8
+      ensure_file_deletion_events_by_users_are_collected:
+      - 5.2.3.13
+      - Ensure file deletion events by users are collected
+      - c5_2_3_13
+      ensure_filesystem_integrity_is_regularly_checked:
+      - 5.3.2
+      - Ensure filesystem integrity is regularly checked
+      - c5_3_2
+      ensure_firewalld_drops_unnecessary_services_and_ports:
+      - 3.4.2.3
+      - Ensure firewalld drops unnecessary services and ports
+      - c3_4_2_3
+      ensure_freevxfs_kernel_module_is_not_available:
+      - 1.1.1.2
+      - Ensure freevxfs kernel module is not available
+      - c1_1_1_2
+      ensure_ftp_client_is_not_installed:
+      - 2.3.1
+      - Ensure ftp client is not installed
+      - c2_3_1
+      ensure_ftp_server_services_are_not_in_use:
+      - 2.2.7
+      - Ensure ftp server services are not in use
+      - c2_2_7
+      ensure_gdm_automatic_mounting_of_removable_media_is_disabled:
+      - 1.8.6
+      - Ensure GDM automatic mounting of removable media is disabled
+      - c1_8_6
+      ensure_gdm_autorun_never_is_enabled:
+      - 1.8.8
+      - Ensure GDM autorun-never is enabled
+      - c1_8_8
+      ensure_gdm_autorun_never_is_not_overridden:
+      - 1.8.9
+      - Ensure GDM autorun-never is not overridden
+      - c1_8_9
+      ensure_gdm_disable_user_list_option_is_enabled:
+      - 1.8.3
+      - Ensure GDM disable-user-list option is enabled
+      - c1_8_3
+      ensure_gdm_disabling_automatic_mounting_of_removable_media_is_not_overridden:
+      - 1.8.7
+      - Ensure GDM disabling automatic mounting of removable media is not overridden
+      - c1_8_7
+      ensure_gdm_login_banner_is_configured:
+      - 1.8.2
+      - Ensure GDM login banner is configured
+      - c1_8_2
+      ensure_gdm_screen_locks_cannot_be_overridden:
+      - 1.8.5
+      - Ensure GDM screen locks cannot be overridden
+      - c1_8_5
+      ensure_gdm_screen_locks_when_the_user_is_idle:
+      - 1.8.4
+      - Ensure GDM screen locks when the user is idle
+      - c1_8_4
+      ensure_gpg_keys_are_configured:
+      - 1.2.1
+      - Ensure GPG keys are configured
+      - c1_2_1
+      ensure_gpgcheck_is_globally_activated:
+      - 1.2.2
+      - Ensure gpgcheck is globally activated
+      - c1_2_2
+      ensure_hfs_kernel_module_is_not_available:
+      - 1.1.1.3
+      - Ensure hfs kernel module is not available
+      - c1_1_1_3
+      ensure_hfsplus_kernel_module_is_not_available:
+      - 1.1.1.4
+      - Ensure hfsplus kernel module is not available
+      - c1_1_1_4
+      ensure_host_based_firewall_loopback_traffic_is_configured:
+      - 3.4.2.2
+      - Ensure host based firewall loopback traffic is configured
+      - c3_4_2_2
+      ensure_icmp_redirects_are_not_accepted:
+      - 3.3.5
+      - Ensure icmp redirects are not accepted
+      - c3_3_5
+      ensure_inactive_password_lock_is_30_days_or_less:
+      - 4.5.1.4
+      - Ensure inactive password lock is 30 days or less
+      - c4_5_1_4
+      ensure_ip_forwarding_is_disabled:
+      - 3.3.1
+      - Ensure ip forwarding is disabled
+      - c3_3_1
+      ensure_ipv6_router_advertisements_are_not_accepted:
+      - 3.3.11
+      - Ensure ipv6 router advertisements are not accepted
+      - c3_3_11
+      ensure_ipv6_status_is_identified:
+      - 3.1.1
+      - Ensure IPv6 status is identified
+      - c3_1_1
+      ensure_jffs2_kernel_module_is_not_available:
+      - 1.1.1.5
+      - Ensure jffs2 kernel module is not available
+      - c1_1_1_5
+      ensure_journald_is_configured_to_compress_large_log_files:
+      - 5.1.2.3
+      - Ensure journald is configured to compress large log files
+      - c5_1_2_3
+      ensure_journald_is_configured_to_send_logs_to_rsyslog:
+      - 5.1.1.3
+      - Ensure journald is configured to send logs to rsyslog
+      - c5_1_1_3
+      ensure_journald_is_configured_to_write_logfiles_to_persistent_disk:
+      - 5.1.2.4
+      - Ensure journald is configured to write logfiles to persistent disk
+      - c5_1_2_4
+      ensure_journald_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.2.1.4
+      - Ensure journald is not configured to receive logs from a remote client
+      - c5_1_2_1_4
+      ensure_journald_is_not_configured_to_send_logs_to_rsyslog:
+      - 5.1.2.5
+      - Ensure journald is not configured to send logs to rsyslog
+      - c5_1_2_5
+      ensure_journald_log_rotation_is_configured_per_site_policy:
+      - 5.1.2.6
+      - Ensure journald log rotation is configured per site policy
+      - c5_1_2_6
+      ensure_journald_service_is_enabled:
+      - 5.1.2.2
+      - Ensure journald service is enabled
+      - c5_1_2_2
+      ensure_kernel_module_loading_unloading_and_modification_is_collected:
+      - 5.2.3.19
+      - Ensure kernel module loading unloading and modification is collected
+      - c5_2_3_19
+      ensure_latest_version_of_authselect_is_installed:
+      - 4.4.1.2
+      - Ensure latest version of authselect is installed
+      - c4_4_1_2
+      ensure_latest_version_of_pam_is_installed:
+      - 4.4.1.1
+      - Ensure latest version of pam is installed
+      - c4_4_1_1
+      ensure_ldap_client_is_not_installed:
+      - 2.3.2
+      - Ensure ldap client is not installed
+      - c2_3_2
+      ensure_local_interactive_user_dot_files_access_is_configured:
+      - 6.2.11
+      - Ensure local interactive user dot files access is configured
+      - c6_2_11
+      ensure_local_interactive_user_home_directories_are_configured:
+      - 6.2.10
+      - Ensure local interactive user home directories are configured
+      - c6_2_10
+      ensure_local_login_warning_banner_is_configured_properly:
+      - 1.7.2
+      - Ensure local login warning banner is configured properly
+      - c1_7_2
+      ensure_logging_is_configured:
+      - 5.1.1.5
+      - Ensure logging is configured
+      - c5_1_1_5
+      ensure_login_and_logout_events_are_collected:
+      - 5.2.3.12
+      - Ensure login and logout events are collected
+      - c5_2_3_12
+      ensure_logrotate_is_configured:
+      - 5.1.3
+      - Ensure logrotate is configured
+      - c5_1_3
+      ensure_mail_transfer_agents_are_configured_for_local_only_mode:
+      - 2.2.21
+      - Ensure mail transfer agents are configured for local-only mode
+      - c2_2_21
+      ensure_message_access_server_services_are_not_in_use:
+      - 2.2.8
+      - Ensure message access server services are not in use
+      - c2_2_8
+      ensure_message_of_the_day_is_configured_properly:
+      - 1.7.1
+      - Ensure message of the day is configured properly
+      - c1_7_1
+      ensure_network_file_system_services_are_not_in_use:
+      - 2.2.9
+      - Ensure network file system services are not in use
+      - c2_2_9
+      ensure_nftables_base_chains_exist:
+      - 3.4.2.1
+      - Ensure nftables base chains exist
+      - c3_4_2_1
+      ensure_nftables_default_deny_firewall_policy:
+      - 3.4.2.5
+      - Ensure nftables default deny firewall policy
+      - c3_4_2_5
+      ensure_nftables_established_connections_are_configured:
+      - 3.4.2.4
+      - Ensure nftables established connections are configured
+      - c3_4_2_4
+      ensure_nftables_is_installed:
+      - 3.4.1.1
+      - Ensure nftables is installed
+      - c3_4_1_1
+      ensure_nis_client_is_not_installed:
+      - 2.3.3
+      - Ensure nis client is not installed
+      - c2_3_3
+      ensure_nis_server_services_are_not_in_use:
+      - 2.2.10
+      - Ensure nis server services are not in use
+      - c2_2_10
+      ensure_no_duplicate_gids_exist:
+      - 6.2.5
+      - Ensure no duplicate GIDs exist
+      - c6_2_5
+      ensure_no_duplicate_group_names_exist:
+      - 6.2.7
+      - Ensure no duplicate group names exist
+      - c6_2_7
+      ensure_no_duplicate_uids_exist:
+      - 6.2.4
+      - Ensure no duplicate UIDs exist
+      - c6_2_4
+      ensure_no_duplicate_user_names_exist:
+      - 6.2.6
+      - Ensure no duplicate user names exist
+      - c6_2_6
+      ensure_no_unconfined_services_exist:
+      - 1.5.1.6
+      - Ensure no unconfined services exist
+      - c1_5_1_6
+      ensure_no_unowned_or_ungrouped_files_or_directories_exist:
+      - 6.1.12
+      - Ensure no unowned or ungrouped files or directories exist
+      - c6_1_12
+      ensure_nodev_option_set_on_devshm_partition:
+      - 1.1.2.2.2
+      - Ensure nodev option set on /dev/shm partition
+      - c1_1_2_2_2
+      ensure_nodev_option_set_on_home_partition:
+      - 1.1.2.3.2
+      - Ensure nodev option set on /home partition
+      - c1_1_2_3_2
+      ensure_nodev_option_set_on_tmp_partition:
+      - 1.1.2.1.2
+      - Ensure nodev option set on /tmp partition
+      - c1_1_2_1_2
+      ensure_nodev_option_set_on_var_partition:
+      - 1.1.2.4.2
+      - Ensure nodev option set on /var partition
+      - c1_1_2_4_2
+      ensure_nodev_option_set_on_varlog_partition:
+      - 1.1.2.6.2
+      - Ensure nodev option set on /var/log partition
+      - c1_1_2_6_2
+      ensure_nodev_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.2
+      - Ensure nodev option set on /var/log/audit partition
+      - c1_1_2_7_2
+      ensure_nodev_option_set_on_vartmp_partition:
+      - 1.1.2.5.2
+      - Ensure nodev option set on /var/tmp partition
+      - c1_1_2_5_2
+      ensure_noexec_option_set_on_devshm_partition:
+      - 1.1.2.2.4
+      - Ensure noexec option set on /dev/shm partition
+      - c1_1_2_2_4
+      ensure_noexec_option_set_on_tmp_partition:
+      - 1.1.2.1.4
+      - Ensure noexec option set on /tmp partition
+      - c1_1_2_1_4
+      ensure_noexec_option_set_on_varlog_partition:
+      - 1.1.2.6.4
+      - Ensure noexec option set on /var/log partition
+      - c1_1_2_6_4
+      ensure_noexec_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.4
+      - Ensure noexec option set on /var/log/audit partition
+      - c1_1_2_7_4
+      ensure_noexec_option_set_on_vartmp_partition:
+      - 1.1.2.5.4
+      - Ensure noexec option set on /var/tmp partition
+      - c1_1_2_5_4
+      ensure_nologin_is_not_listed_in_etcshells:
+      - 4.5.3.1
+      - Ensure nologin is not listed in /etc/shells
+      - c4_5_3_1
+      ensure_nosuid_option_set_on_devshm_partition:
+      - 1.1.2.2.3
+      - Ensure nosuid option set on /dev/shm partition
+      - c1_1_2_2_3
+      ensure_nosuid_option_set_on_home_partition:
+      - 1.1.2.3.3
+      - Ensure nosuid option set on /home partition
+      - c1_1_2_3_3
+      ensure_nosuid_option_set_on_tmp_partition:
+      - 1.1.2.1.3
+      - Ensure nosuid option set on /tmp partition
+      - c1_1_2_1_3
+      ensure_nosuid_option_set_on_var_partition:
+      - 1.1.2.4.3
+      - Ensure nosuid option set on /var partition
+      - c1_1_2_4_3
+      ensure_nosuid_option_set_on_varlog_partition:
+      - 1.1.2.6.3
+      - Ensure nosuid option set on /var/log partition
+      - c1_1_2_6_3
+      ensure_nosuid_option_set_on_varlogaudit_partition:
+      - 1.1.2.7.3
+      - Ensure nosuid option set on /var/log/audit partition
+      - c1_1_2_7_3
+      ensure_nosuid_option_set_on_vartmp_partition:
+      - 1.1.2.5.3
+      - Ensure nosuid option set on /var/tmp partition
+      - c1_1_2_5_3
+      ensure_only_approved_services_are_listening_on_a_network_interface:
+      - 2.2.22
+      - Ensure only approved services are listening on a network interface
+      - c2_2_22
+      ensure_only_authorized_groups_are_assigned_ownership_of_audit_log_files:
+      - 5.2.4.4
+      - Ensure only authorized groups are assigned ownership of audit log files
+      - c5_2_4_4
+      ensure_only_authorized_users_own_audit_log_files:
+      - 5.2.4.3
+      - Ensure only authorized users own audit log files
+      - c5_2_4_3
+      ensure_package_manager_repositories_are_configured:
+      - 1.2.4
+      - Ensure package manager repositories are configured
+      - c1_2_4
+      ensure_packet_redirect_sending_is_disabled:
+      - 3.3.2
+      - Ensure packet redirect sending is disabled
+      - c3_3_2
+      ensure_pam_faillock_module_is_enabled:
+      - 4.4.2.2
+      - Ensure pam_faillock module is enabled
+      - c4_4_2_2
+      ensure_pam_pwhistory_includes_use_authtok:
+      - 4.4.3.3.3
+      - Ensure pam_pwhistory includes use_authtok
+      - c4_4_3_3_3
+      ensure_pam_pwhistory_module_is_enabled:
+      - 4.4.2.4
+      - Ensure pam_pwhistory module is enabled
+      - c4_4_2_4
+      ensure_pam_pwquality_module_is_enabled:
+      - 4.4.2.3
+      - Ensure pam_pwquality module is enabled
+      - c4_4_2_3
+      ensure_pam_unix_does_not_include_nullok:
+      - 4.4.3.4.1
+      - Ensure pam_unix does not include nullok
+      - c4_4_3_4_1
+      ensure_pam_unix_does_not_include_remember:
+      - 4.4.3.4.2
+      - Ensure pam_unix does not include remember
+      - c4_4_3_4_2
+      ensure_pam_unix_includes_a_strong_password_hashing_algorithm:
+      - 4.4.3.4.3
+      - Ensure pam_unix includes a strong password hashing algorithm
+      - c4_4_3_4_3
+      ensure_pam_unix_includes_use_authtok:
+      - 4.4.3.4.4
+      - Ensure pam_unix includes use_authtok
+      - c4_4_3_4_4
+      ensure_pam_unix_module_is_enabled:
+      - 4.4.2.5
+      - Ensure pam_unix module is enabled
+      - c4_4_2_5
+      ensure_password_complexity_is_configured:
+      - 4.4.3.2.3
+      - Ensure password complexity is configured
+      - c4_4_3_2_3
+      ensure_password_dictionary_check_is_enabled:
+      - 4.4.3.2.6
+      - Ensure password dictionary check is enabled
+      - c4_4_3_2_6
+      ensure_password_expiration_is_365_days_or_less:
+      - 4.5.1.2
+      - Ensure password expiration is 365 days or less
+      - c4_5_1_2
+      ensure_password_expiration_warning_days_is_7_or_more:
+      - 4.5.1.3
+      - Ensure password expiration warning days is 7 or more
+      - c4_5_1_3
+      ensure_password_failed_attempts_lockout_includes_root_account:
+      - 4.4.3.1.3
+      - Ensure password failed attempts lockout includes root account
+      - c4_4_3_1_3
+      ensure_password_failed_attempts_lockout_is_configured:
+      - 4.4.3.1.1
+      - Ensure password failed attempts lockout is configured
+      - c4_4_3_1_1
+      ensure_password_history_is_enforced_for_the_root_user:
+      - 4.4.3.3.2
+      - Ensure password history is enforced for the root user
+      - c4_4_3_3_2
+      ensure_password_history_remember_is_configured:
+      - 4.4.3.3.1
+      - Ensure password history remember is configured
+      - c4_4_3_3_1
+      ensure_password_length_is_configured:
+      - 4.4.3.2.2
+      - Ensure password length is configured
+      - c4_4_3_2_2
+      ensure_password_maximum_sequential_characters_is_configured:
+      - 4.4.3.2.5
+      - Ensure password maximum sequential characters is configured
+      - c4_4_3_2_5
+      ensure_password_number_of_changed_characters_is_configured:
+      - 4.4.3.2.1
+      - Ensure password number of changed characters is configured
+      - c4_4_3_2_1
+      ensure_password_quality_is_enforced_for_the_root_user:
+      - 4.4.3.2.7
+      - Ensure password quality is enforced for the root user
+      - c4_4_3_2_7
+      ensure_password_same_consecutive_characters_is_configured:
+      - 4.4.3.2.4
+      - Ensure password same consecutive characters is configured
+      - c4_4_3_2_4
+      ensure_password_unlock_time_is_configured:
+      - 4.4.3.1.2
+      - Ensure password unlock time is configured
+      - c4_4_3_1_2
+      ensure_permissions_on_bootloader_config_are_configured:
+      - 1.3.2
+      - Ensure permissions on bootloader config are configured
+      - c1_3_2
+      ensure_permissions_on_etccron_d_are_configured:
+      - 4.1.1.7
+      - Ensure permissions on /etc/cron.d are configured
+      - c4_1_1_7
+      ensure_permissions_on_etccron_daily_are_configured:
+      - 4.1.1.4
+      - Ensure permissions on /etc/cron.daily are configured
+      - c4_1_1_4
+      ensure_permissions_on_etccron_hourly_are_configured:
+      - 4.1.1.3
+      - Ensure permissions on /etc/cron.hourly are configured
+      - c4_1_1_3
+      ensure_permissions_on_etccron_monthly_are_configured:
+      - 4.1.1.6
+      - Ensure permissions on /etc/cron.monthly are configured
+      - c4_1_1_6
+      ensure_permissions_on_etccron_weekly_are_configured:
+      - 4.1.1.5
+      - Ensure permissions on /etc/cron.weekly are configured
+      - c4_1_1_5
+      ensure_permissions_on_etccrontab_are_configured:
+      - 4.1.1.2
+      - Ensure permissions on /etc/crontab are configured
+      - c4_1_1_2
+      ensure_permissions_on_etcgroup__are_configured:
+      - 6.1.5
+      - Ensure permissions on /etc/group- are configured
+      - c6_1_5
+      ensure_permissions_on_etcgroup_are_configured:
+      - 6.1.4
+      - Ensure permissions on /etc/group are configured
+      - c6_1_4
+      ensure_permissions_on_etcgshadow__are_configured:
+      - 6.1.9
+      - Ensure permissions on /etc/gshadow- are configured
+      - c6_1_9
+      ensure_permissions_on_etcgshadow_are_configured:
+      - 6.1.8
+      - Ensure permissions on /etc/gshadow are configured
+      - c6_1_8
+      ensure_permissions_on_etcopasswd_are_configured:
+      - 6.1.3
+      - Ensure permissions on /etc/opasswd are configured
+      - c6_1_3
+      ensure_permissions_on_etcpasswd__are_configured:
+      - 6.1.2
+      - Ensure permissions on /etc/passwd- are configured
+      - c6_1_2
+      ensure_permissions_on_etcpasswd_are_configured:
+      - 6.1.1
+      - Ensure permissions on /etc/passwd are configured
+      - c6_1_1
+      ensure_permissions_on_etcshadow__are_configured:
+      - 6.1.7
+      - Ensure permissions on /etc/shadow- are configured
+      - c6_1_7
+      ensure_permissions_on_etcshadow_are_configured:
+      - 6.1.6
+      - Ensure permissions on /etc/shadow are configured
+      - c6_1_6
+      ensure_permissions_on_etcshells_are_configured:
+      - 6.1.10
+      - Ensure permissions on /etc/shells are configured
+      - c6_1_10
+      ensure_permissions_on_etcsshsshd_config_are_configured:
+      - 4.2.1
+      - Ensure permissions on /etc/ssh/sshd_config are configured
+      - c4_2_1
+      ensure_permissions_on_ssh_private_host_key_files_are_configured:
+      - 4.2.2
+      - Ensure permissions on SSH private host key files are configured
+      - c4_2_2
+      ensure_permissions_on_ssh_public_host_key_files_are_configured:
+      - 4.2.3
+      - Ensure permissions on SSH public host key files are configured
+      - c4_2_3
+      ensure_ptrace_scope_is_restricted:
+      - 1.4.2
+      - Ensure ptrace_scope is restricted
+      - c1_4_2
+      ensure_rds_kernel_module_is_not_available:
+      - 3.2.3
+      - Ensure rds kernel module is not available
+      - c3_2_3
+      ensure_re_authentication_for_privilege_escalation_is_not_disabled_globally:
+      - 4.3.5
+      - Ensure re-authentication for privilege escalation is not disabled globally
+      - c4_3_5
+      ensure_remote_login_warning_banner_is_configured_properly:
+      - 1.7.3
+      - Ensure remote login warning banner is configured properly
+      - c1_7_3
+      ensure_repo_gpgcheck_is_globally_activated:
+      - 1.2.3
+      - Ensure repo_gpgcheck is globally activated
+      - c1_2_3
+      ensure_reverse_path_filtering_is_enabled:
+      - 3.3.7
+      - Ensure reverse path filtering is enabled
+      - c3_3_7
+      ensure_root_is_the_only_uid_0_account:
+      - 6.2.9
+      - Ensure root is the only UID 0 account
+      - c6_2_9
+      ensure_root_password_is_set:
+      - 4.5.2.4
+      - Ensure root password is set
+      - c4_5_2_4
+      ensure_root_path_integrity:
+      - 6.2.8
+      - Ensure root path integrity
+      - c6_2_8
+      ensure_root_user_umask_is_configured:
+      - 4.5.2.2
+      - Ensure root user umask is configured
+      - c4_5_2_2
+      ensure_rpcbind_services_are_not_in_use:
+      - 2.2.12
+      - Ensure rpcbind services are not in use
+      - c2_2_12
+      ensure_rsync_services_are_not_in_use:
+      - 2.2.13
+      - Ensure rsync services are not in use
+      - c2_2_13
+      ensure_rsyslog_default_file_permissions_are_configured:
+      - 5.1.1.4
+      - Ensure rsyslog default file permissions are configured
+      - c5_1_1_4
+      ensure_rsyslog_is_configured_to_send_logs_to_a_remote_log_host:
+      - 5.1.1.6
+      - Ensure rsyslog is configured to send logs to a remote log host
+      - c5_1_1_6
+      ensure_rsyslog_is_installed:
+      - 5.1.1.1
+      - Ensure rsyslog is installed
+      - c5_1_1_1
+      ensure_rsyslog_is_not_configured_to_receive_logs_from_a_remote_client:
+      - 5.1.1.7
+      - Ensure rsyslog is not configured to receive logs from a remote client
+      - c5_1_1_7
+      ensure_rsyslog_service_is_enabled:
+      - 5.1.1.2
+      - Ensure rsyslog service is enabled
+      - c5_1_1_2
+      ensure_samba_file_server_services_are_not_in_use:
+      - 2.2.6
+      - Ensure samba file server services are not in use
+      - c2_2_6
+      ensure_sctp_kernel_module_is_not_available:
+      - 3.2.4
+      - Ensure sctp kernel module is not available
+      - c3_2_4
+      ensure_secure_icmp_redirects_are_not_accepted:
+      - 3.3.6
+      - Ensure secure icmp redirects are not accepted
+      - c3_3_6
+      ensure_selinux_is_installed:
+      - 1.5.1.1
+      - Ensure SELinux is installed
+      - c1_5_1_1
+      ensure_selinux_is_not_disabled_in_bootloader_configuration:
+      - 1.5.1.2
+      - Ensure SELinux is not disabled in bootloader configuration
+      - c1_5_1_2
+      ensure_selinux_policy_is_configured:
+      - 1.5.1.3
+      - Ensure SELinux policy is configured
+      - c1_5_1_3
+      ensure_separate_partition_exists_for_home:
+      - 1.1.2.3.1
+      - Ensure separate partition exists for /home
+      - c1_1_2_3_1
+      ensure_separate_partition_exists_for_var:
+      - 1.1.2.4.1
+      - Ensure separate partition exists for /var
+      - c1_1_2_4_1
+      ensure_separate_partition_exists_for_varlog:
+      - 1.1.2.6.1
+      - Ensure separate partition exists for /var/log
+      - c1_1_2_6_1
+      ensure_separate_partition_exists_for_varlogaudit:
+      - 1.1.2.7.1
+      - Ensure separate partition exists for /var/log/audit
+      - c1_1_2_7_1
+      ensure_separate_partition_exists_for_vartmp:
+      - 1.1.2.5.1
+      - Ensure separate partition exists for /var/tmp
+      - c1_1_2_5_1
+      ensure_session_initiation_information_is_collected:
+      - 5.2.3.11
+      - Ensure session initiation information is collected
+      - c5_2_3_11
+      ensure_snmp_services_are_not_in_use:
+      - 2.2.14
+      - Ensure snmp services are not in use
+      - c2_2_14
+      ensure_source_routed_packets_are_not_accepted:
+      - 3.3.8
+      - Ensure source routed packets are not accepted
+      - c3_3_8
+      ensure_squashfs_kernel_module_is_not_available:
+      - 1.1.1.6
+      - Ensure squashfs kernel module is not available
+      - c1_1_1_6
+      ensure_sshd_access_is_configured:
+      - 4.2.4
+      - Ensure sshd access is configured
+      - c4_2_4
+      ensure_sshd_banner_is_configured:
+      - 4.2.5
+      - Ensure sshd Banner is configured
+      - c4_2_5
+      ensure_sshd_ciphers_are_configured:
+      - 4.2.6
+      - Ensure sshd Ciphers are configured
+      - c4_2_6
+      ensure_sshd_clientaliveinterval_and_clientalivecountmax_are_configured:
+      - 4.2.7
+      - Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured
+      - c4_2_7
+      ensure_sshd_crypto_policy_is_not_set:
+      - 4.2.22
+      - Ensure sshd crypto_policy is not set
+      - c4_2_22
+      ensure_sshd_disableforwarding_is_enabled:
+      - 4.2.8
+      - Ensure sshd DisableForwarding is enabled
+      - c4_2_8
+      ensure_sshd_hostbasedauthentication_is_disabled:
+      - 4.2.9
+      - Ensure sshd HostbasedAuthentication is disabled
+      - c4_2_9
+      ensure_sshd_ignorerhosts_is_enabled:
+      - 4.2.10
+      - Ensure sshd IgnoreRhosts is enabled
+      - c4_2_10
+      ensure_sshd_kexalgorithms_is_configured:
+      - 4.2.11
+      - Ensure sshd KexAlgorithms is configured
+      - c4_2_11
+      ensure_sshd_logingracetime_is_configured:
+      - 4.2.12
+      - Ensure sshd LoginGraceTime is configured
+      - c4_2_12
+      ensure_sshd_loglevel_is_configured:
+      - 4.2.13
+      - Ensure sshd LogLevel is configured
+      - c4_2_13
+      ensure_sshd_macs_are_configured:
+      - 4.2.14
+      - Ensure sshd MACs are configured
+      - c4_2_14
+      ensure_sshd_maxauthtries_is_configured:
+      - 4.2.15
+      - Ensure sshd MaxAuthTries is configured
+      - c4_2_15
+      ensure_sshd_maxsessions_is_configured:
+      - 4.2.16
+      - Ensure sshd MaxSessions is configured
+      - c4_2_16
+      ensure_sshd_maxstartups_is_configured:
+      - 4.2.17
+      - Ensure sshd MaxStartups is configured
+      - c4_2_17
+      ensure_sshd_permitemptypasswords_is_disabled:
+      - 4.2.18
+      - Ensure sshd PermitEmptyPasswords is disabled
+      - c4_2_18
+      ensure_sshd_permitrootlogin_is_disabled:
+      - 4.2.19
+      - Ensure sshd PermitRootLogin is disabled
+      - c4_2_19
+      ensure_sshd_permituserenvironment_is_disabled:
+      - 4.2.20
+      - Ensure sshd PermitUserEnvironment is disabled
+      - c4_2_20
+      ensure_sshd_usepam_is_enabled:
+      - 4.2.21
+      - Ensure sshd UsePAM is enabled
+      - c4_2_21
+      ensure_strong_password_hashing_algorithm_is_configured:
+      - 4.5.1.1
+      - Ensure strong password hashing algorithm is configured
+      - c4_5_1_1
+      ensure_successful_and_unsuccessful_attempts_to_use_the_chacl_command_are_recorded:
+      - 5.2.3.17
+      - Ensure successful and unsuccessful attempts to use the chacl command are recorded
+      - c5_2_3_17
+      ensure_successful_and_unsuccessful_attempts_to_use_the_chcon_command_are_recorded:
+      - 5.2.3.15
+      - Ensure successful and unsuccessful attempts to use the chcon command are recorded
+      - c5_2_3_15
+      ensure_successful_and_unsuccessful_attempts_to_use_the_setfacl_command_are_recorded:
+      - 5.2.3.16
+      - Ensure successful and unsuccessful attempts to use the setfacl command are
+        recorded
+      - c5_2_3_16
+      ensure_successful_and_unsuccessful_attempts_to_use_the_usermod_command_are_recorded:
+      - 5.2.3.18
+      - Ensure successful and unsuccessful attempts to use the usermod command are
+        recorded
+      - c5_2_3_18
+      ensure_successful_file_system_mounts_are_collected:
+      - 5.2.3.10
+      - Ensure successful file system mounts are collected
+      - c5_2_3_10
+      ensure_sudo_authentication_timeout_is_configured_correctly:
+      - 4.3.6
+      - Ensure sudo authentication timeout is configured correctly
+      - c4_3_6
+      ensure_sudo_commands_use_pty:
+      - 4.3.2
+      - Ensure sudo commands use pty
+      - c4_3_2
+      ensure_sudo_is_installed:
+      - 4.3.1
+      - Ensure sudo is installed
+      - c4_3_1
+      ensure_sudo_log_file_exists:
+      - 4.3.3
+      - Ensure sudo log file exists
+      - c4_3_3
+      ensure_suid_and_sgid_files_are_reviewed:
+      - 6.1.13
+      - Ensure SUID and SGID files are reviewed
+      - c6_1_13
+      ensure_suspicious_packets_are_logged:
+      - 3.3.9
+      - Ensure suspicious packets are logged
+      - c3_3_9
+      ensure_system_accounts_are_secured:
+      - 4.5.2.3
+      - Ensure system accounts are secured
+      - c4_5_2_3
+      ensure_system_is_disabled_when_audit_logs_are_full:
+      - 5.2.2.3
+      - Ensure system is disabled when audit logs are full
+      - c5_2_2_3
+      ensure_system_warns_when_audit_logs_are_low_on_space:
+      - 5.2.2.4
+      - Ensure system warns when audit logs are low on space
+      - c5_2_2_4
+      ensure_system_wide_crypto_policy_disables_cbc_for_ssh:
+      - 1.6.3
+      - Ensure system wide crypto policy disables cbc for ssh
+      - c1_6_3
+      ensure_system_wide_crypto_policy_disables_macs_less_than_128_bits:
+      - 1.6.4
+      - Ensure system wide crypto policy disables macs less than 128 bits
+      - c1_6_4
+      ensure_system_wide_crypto_policy_disables_sha1_hash_and_signature_support:
+      - 1.6.2
+      - Ensure system wide crypto policy disables sha1 hash and signature support
+      - c1_6_2
+      ensure_system_wide_crypto_policy_is_not_set_to_legacy:
+      - 1.6.1
+      - Ensure system wide crypto policy is not set to legacy
+      - c1_6_1
+      ensure_systemd_journal_remote_is_configured:
+      - 5.1.2.1.2
+      - Ensure systemd-journal-remote is configured
+      - c5_1_2_1_2
+      ensure_systemd_journal_remote_is_enabled:
+      - 5.1.2.1.3
+      - Ensure systemd-journal-remote is enabled
+      - c5_1_2_1_3
+      ensure_systemd_journal_remote_is_installed:
+      - 5.1.2.1.1
+      - Ensure systemd-journal-remote is installed
+      - c5_1_2_1_1
+      ensure_tcp_syn_cookies_is_enabled:
+      - 3.3.10
+      - Ensure tcp syn cookies is enabled
+      - c3_3_10
+      ensure_telnet_client_is_not_installed:
+      - 2.3.4
+      - Ensure telnet client is not installed
+      - c2_3_4
+      ensure_telnet_server_services_are_not_in_use:
+      - 2.2.15
+      - Ensure telnet server services are not in use
+      - c2_2_15
+      ensure_tftp_client_is_not_installed:
+      - 2.3.5
+      - Ensure tftp client is not installed
+      - c2_3_5
+      ensure_tftp_server_services_are_not_in_use:
+      - 2.2.16
+      - Ensure tftp server services are not in use
+      - c2_2_16
+      ensure_the_audit_configuration_is_immutable:
+      - 5.2.3.20
+      - Ensure the audit configuration is immutable
+      - c5_2_3_20
+      ensure_the_audit_log_directory_is_0750_or_more_restrictive:
+      - 5.2.4.1
+      - Ensure the audit log directory is 0750 or more restrictive
+      - c5_2_4_1
+      ensure_the_mcs_translation_service_mcstrans_is_not_installed:
+      - 1.5.1.7
+      - Ensure the MCS Translation Service (mcstrans) is not installed
+      - c1_5_1_7
+      ensure_the_running_and_on_disk_configuration_is_the_same:
+      - 5.2.3.21
+      - Ensure the running and on disk configuration is the same
+      - c5_2_3_21
+      ensure_the_selinux_mode_is_enforcing:
+      - 1.5.1.5
+      - Ensure the SELinux mode is enforcing
+      - c1_5_1_5
+      ensure_the_selinux_mode_is_not_disabled:
+      - 1.5.1.4
+      - Ensure the SELinux mode is not disabled
+      - c1_5_1_4
+      ensure_time_synchronization_is_in_use:
+      - 2.1.1
+      - Ensure time synchronization is in use
+      - c2_1_1
+      ensure_tipc_kernel_module_is_not_available:
+      - 3.2.2
+      - Ensure tipc kernel module is not available
+      - c3_2_2
+      ensure_tmp_is_a_separate_partition:
+      - 1.1.2.1.1
+      - Ensure /tmp is a separate partition
+      - c1_1_2_1_1
+      ensure_udf_kernel_module_is_not_available:
+      - 1.1.1.7
+      - Ensure udf kernel module is not available
+      - c1_1_1_7
+      ensure_unsuccessful_file_access_attempts_are_collected:
+      - 5.2.3.7
+      - Ensure unsuccessful file access attempts are collected
+      - c5_2_3_7
+      ensure_updates_patches_and_additional_security_software_are_installed:
+      - 1.2.5
+      - Ensure updates, patches, and additional security software are installed
+      - c1_2_5
+      ensure_usb_storage_kernel_module_is_not_available:
+      - 1.1.1.8
+      - Ensure usb-storage kernel module is not available
+      - c1_1_1_8
+      ensure_use_of_privileged_commands_are_collected:
+      - 5.2.3.6
+      - Ensure use of privileged commands are collected
+      - c5_2_3_6
+      ensure_users_must_provide_password_for_escalation:
+      - 4.3.4
+      - Ensure users must provide password for escalation
+      - c4_3_4
+      ensure_web_proxy_server_services_are_not_in_use:
+      - 2.2.17
+      - Ensure web proxy server services are not in use
+      - c2_2_17
+      ensure_web_server_services_are_not_in_use:
+      - 2.2.18
+      - Ensure web server services are not in use
+      - c2_2_18
+      ensure_world_writable_files_and_directories_are_secured:
+      - 6.1.11
+      - Ensure world writable files and directories are secured
+      - c6_1_11
+      ensure_xdmcp_is_not_enabled:
+      - 1.8.10
+      - Ensure XDMCP is not enabled
+      - c1_8_10
+      ensure_xinetd_services_are_not_in_use:
+      - 2.2.19
+      - Ensure xinetd services are not in use
+      - c2_2_19
+  benchmark:
+    title: CIS Rocky Linux 8 Benchmark
+    version: 2.0.0

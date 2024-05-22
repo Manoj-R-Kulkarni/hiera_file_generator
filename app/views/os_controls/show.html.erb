@@ -8,8 +8,9 @@
   <div id="controls-container">
     <% @controls.each do |control| %>
       <div>
+        <% cnt_arr = @mapping_data[control.to_s] %>
         <%= check_box_tag 'controls[]', control, false, class: 'control-checkbox' %>
-        <%= label_tag "controls_#{control}", control %>
+        <%= label_tag "controls_#{control}", "#{cnt_arr[0]}  #{cnt_arr [1]}" %>
       </div>
     <% end %>
   </div>
