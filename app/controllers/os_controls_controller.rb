@@ -32,7 +32,7 @@ class OsControlsController < ApplicationController
       'RedHat Enterprise Linux 8' => pick_controls_only,
       'RedHat Enterprise Linux 7' => pick_controls_only,
       'Alma Linux 8' => pick_controls_only,
-      'Alma Linux 7' => pick_controls_only, 
+      'Alma Linux 7' => pick_controls_only,
       'Oracle Linux 8' => pick_controls_only,
       'Oracle Linux 7' => pick_controls_only,
       'CentOS 8' => pick_controls_only,
