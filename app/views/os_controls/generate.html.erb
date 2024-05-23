@@ -1,74 +1,24 @@
-<style>
-  .clipboard-icon {
-    cursor: pointer;
-    color: #007bff;
-    transition: color 0.3s ease;
-  }
-  .clipboard-icon:hover {
-    color: #0056b3;
-  }
-  .copy-tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  .copy-tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -70px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .copy-tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-  .pre-scrollable {
-    height: 600px;
-  }
-</style>
-    <div class="row">
-      <div class="col">
-        <h3 class="display-5">Generated Hiera for <%= @os %></h3>
-        <div class="mt-1 position-relative">
-          <div class="d-flex justify-content-end">
-            <div class="copy-tooltip">
-              <i class="bi bi-clipboard clipboard-icon" id="copy-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
-                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
-                </svg>
-              </i>
-              <span class="tooltiptext" id="tooltip-text">Copy to clipboard</span>
-            </div>
-          </div>
-          <pre style="height: 550px">
-            <code id="yaml-content">
-              <%= @yaml_content %>
-            </code>
-          </pre>
+
+  <div class="row">
+    <div class="col">
+      <h3 class="display-5">Generated Hiera for <%= @os %></h3>
+      <div class="mt-1 position-relative">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary btn-sm mr-2" id="copy-button">Copy to clipboard</button>    
+          <%= form_with url: generate_controls_path(os: @os, controls: @selected_controls, option: @option, format: :yaml), method: :post, local: true do |form| %>
+            <%= form.submit 'Download Heira File', class: 'btn btn-primary btn-sm' %>
+          <% end %>  
         </div>
+        <pre style="height: 550px">
+          <code id="yaml-content">
+            <%= @yaml_content %>
+          </code>
+        </pre>
       </div>
     </div>
-    
-    <div class="row mt-4">
-      <div class="col text-center">
-        <%= form_with url: generate_controls_path(os: @os, controls: @selected_controls, option: @option, format: :yaml), method: :post, local: true do |form| %>
-          <%= form.submit 'Download Heira File', class: 'btn btn-primary' %>
-        <% end %>
-      </div>
-    </div>
-
+  </div>
+  
   <script>
-
     document.addEventListener('DOMContentLoaded', (event) => {
       hljs.highlightAll();
     });
