@@ -15,7 +15,7 @@ class OsControlsController < ApplicationController
     @os = params[:os]
     @selected_controls = params[:controls] || []
     @option = params[:option]
-    final_controls_to_show = get_final_controls(@os, @selected_controls, @option)
+    final_controls_to_show = get_final_controls(@selected_controls, @option)
 
     @yaml_content = GenerateHeiraData.new.content('cis', 'server', '2', @option, @selected_controls, load_required_hash(final_controls_to_show), '/Users/rahul.sinha/Downloads', '', @os)
 
@@ -51,7 +51,7 @@ class OsControlsController < ApplicationController
     controls_hash.map { |_klass, details| details[:controls].keys }.flatten.map(&:to_s).reject { |control| removed_controls.include?(control)  }
   end
 
-  def get_final_controls(os ,selected_controls, selected_option)
+  def get_final_controls(selected_controls, selected_option)
     if %w[all only].include?(selected_option)
       selected_controls
     elsif selected_option.eql?('ignore')
@@ -66,7 +66,7 @@ class OsControlsController < ApplicationController
     controls_hash.each do |class_name, class_data|
       class_data[:controls].each do |control_name, control_data|
         if final_controls.include?(control_name.to_s)
-          next if control_data == 'no_params'
+          next if control_data.eql?('no_params')
 
           control_data_hash = {}
           control_data.each do |k, v|

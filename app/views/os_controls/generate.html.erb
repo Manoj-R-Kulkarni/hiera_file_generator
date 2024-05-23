@@ -6,7 +6,7 @@
         <div class="d-flex justify-content-end">
           <button type="button" class="btn btn-secondary btn-sm mr-2" id="copy-button">Copy to clipboard</button>    
           <%= form_with url: generate_controls_path(os: @os, controls: @selected_controls, option: @option, format: :yaml), method: :post, local: true do |form| %>
-            <%= form.submit 'Download Hiera File', class: 'btn btn-primary btn-sm' %>
+            <%= form.submit 'Download Hiera File', class: 'btn btn-info btn-sm' %>
           <% end %>  
         </div>
         <pre style="height: 550px">
