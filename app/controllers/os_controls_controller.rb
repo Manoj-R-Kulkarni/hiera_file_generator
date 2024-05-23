@@ -8,8 +8,6 @@ class OsControlsController < ApplicationController
   def show
     @os = params[:os]
     @controls = get_controls(@os)
-
-    
     @mapping_data = read_mapping_data.first[1].first[1].first[1]
   end
 
@@ -31,10 +29,15 @@ class OsControlsController < ApplicationController
 
   def get_controls(os)
     controls = {
-      'RHEL8' => pick_controls_only,
-      'RHEL7' => pick_controls_only,
-      'AlmaLinux8' => pick_controls_only,
-      'OracleLinux8' => pick_controls_only
+      'RedHat Enterprise Linux 8' => pick_controls_only,
+      'RedHat Enterprise Linux 7' => pick_controls_only,
+      'Alma Linux 8' => pick_controls_only,
+      'Alma Linux 7' => pick_controls_only, 
+      'Oracle Linux 8' => pick_controls_only,
+      'Oracle Linux 7' => pick_controls_only,
+      'CentOS 8' => pick_controls_only,
+      'CentOS 7' => pick_controls_only,
+      'Ubuntu 20' => pick_controls_only
     }
     controls[os] || []
   end

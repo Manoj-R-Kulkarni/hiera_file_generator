@@ -1,10 +1,20 @@
-<%# <h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p> %>
+<% content_for :content_title do %>
+  <h1>Select Operating System</h1>
+<% end %>
 
-
-<h1>Select Operating System</h1>
-<ul>
-  <% @operating_systems.each do |os| %>
-    <li><%= link_to os, os_controls_path(os) %></li>
-  <% end %>
-</ul>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Operating Systems</th>
+      <th></th> <!-- Empty header for the link -->
+    </tr>
+  </thead>
+  <tbody>
+    <% @operating_systems.each do |os| %>
+      <tr>
+        <td><%= os %></td>
+        <td><%= link_to 'Select', os_controls_path(os), class: 'btn btn-primary' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
