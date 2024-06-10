@@ -7,8 +7,7 @@ This Rails application is designed to generate automated hiera files for SCE (Se
 ## Installation
 1. Clone the repository.
 2. Run `bundle install` to install the required gems.
-3. Set up the database by running `rails db:setup`.
-4. Start the Rails server with `rails server`.
+3. Start the Rails server with `rails server`.
 
 
 ## Contributing
